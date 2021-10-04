@@ -11,7 +11,7 @@ const MainWrapper = styled.div`
 const App = () => {
   return (
     <MainWrapper>
-      <h3>Hello World</h3>
+      <h3>Hello Le sang</h3>
     </MainWrapper>
   );
 }
