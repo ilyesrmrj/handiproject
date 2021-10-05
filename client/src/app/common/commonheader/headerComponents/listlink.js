@@ -7,24 +7,34 @@ const ListStyle = styled.ul`
 `
 const LiStyle = styled.li`
     list-style: none;
-    margin: 15px 20px;
+    margin: 13px 50px;
+    cursor: pointer;
+   
+`
+const LinkStyle = styled.a`
+    color: gray;
+    text-decoration: none;
+    &:hover {
+            color: black;
+        }
 `
 
 const WrapperList = styled.div`
     width: 20%;
 `
 const LinkList = () => {
+
     const List = [
-        'lorem',
-        'lorem',
-        'lorem',
-        'lorem',
-        'lorem'
+        'Accueil',
+        'Decouvrir+',
+        'Règles',
+        'Tarifs'
     ]
+
     return(
         <WrapperList>
             <ListStyle>
-                {List.map(link => <LiStyle>{link}</LiStyle>)}
+                {List.map(link => <LiStyle><LinkStyle href='/'>{link}</LinkStyle></LiStyle>)}
             </ListStyle>
         </WrapperList>
     )

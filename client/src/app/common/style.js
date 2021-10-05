@@ -10,6 +10,10 @@ export const ButtonApprentice = styled.button`
     font-size: 18px;
     padding: 10px;
     cursor: pointer;
+    &:hover{
+        color: #fff;
+        background-color: #858585;
+    }
 `
 export const ButtonDiv = styled.div`
     width: 100%;
