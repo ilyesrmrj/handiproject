@@ -2,6 +2,7 @@ import './App.css';
 import styled from 'styled-components'
 import CommonHeader from './common/commonheader/commonheader';
 import Home from './handiApp/home/home';
+import HandiEngagement from './component/handiengagement/handiengagement';
 
 const HomeWrapper = styled.div`
   text-align: center ;
@@ -17,6 +18,7 @@ const App = () => {
       <HomeWrapper>
         <Home/>
       </HomeWrapper>
+      <HandiEngagement/>
     </>
   );
 }
