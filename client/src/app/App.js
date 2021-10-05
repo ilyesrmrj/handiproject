@@ -1,7 +1,8 @@
 import './App.css';
-import CommonHeader from './common/commonheader/commonheader';
+import CommonHeader from './common/commonHeader/commonheader';
 import Home from './handiApp/home/home';
-import HandiEngagement from './handiApp/handiengagement/handiengagement';
+import HandiEngagement from './handiApp/handiEngagement/handiengagement';
+import SupportComponent from './handiApp/supportComponent/supportComponent';
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <CommonHeader/>
       <Home/>
       <HandiEngagement/>
+      <SupportComponent/>
     </>
   );
 }

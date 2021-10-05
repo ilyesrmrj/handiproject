@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+
 const ListStyle = styled.ul`
     display: flex;
     flex-direction: row;
@@ -7,13 +8,15 @@ const ListStyle = styled.ul`
 `
 const LiStyle = styled.li`
     list-style: none;
-    margin: 13px 50px;
+    margin-right: 80px;
+    margin-top: 14px;
     cursor: pointer;
    
 `
 const LinkStyle = styled.a`
     color: gray;
     text-decoration: none;
+    text-transform: uppercase;
     &:hover {
             color: black;
         }
@@ -26,7 +29,7 @@ const LinkList = () => {
 
     const List = [
         'Accueil',
-        'Decouvrir+',
+        'Découvrir+',
         'Règles',
         'Tarifs'
     ]
@@ -34,7 +37,7 @@ const LinkList = () => {
     return(
         <WrapperList>
             <ListStyle>
-                {List.map(link => <LiStyle><LinkStyle href='/'>{link}</LinkStyle></LiStyle>)}
+                {List.map(link => <LiStyle key={link}><LinkStyle href='/'>{link}</LinkStyle></LiStyle>)}
             </ListStyle>
         </WrapperList>
     )

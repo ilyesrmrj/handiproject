@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { LogoHandi } from "../../handiApp/home/image"
+import { LogoHandi } from "../utils/image"
 import LinkList from "./headerComponents/listlink"
 import ConnectButton from "./headerComponents/connectbutton"
 
@@ -11,6 +11,8 @@ const CommonHeaderStyled = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
+    align-items: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;

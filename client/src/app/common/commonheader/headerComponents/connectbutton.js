@@ -4,7 +4,8 @@ const ConnectHand = styled.button`
     border-radius: 25px;
     border: 2px solid #2DAAE1;
     padding: 10px;
-    margin: 18px 25px;
+    margin-right: 25px;
+    margin-top: 18px;
     height: 45%;
     width: 25%;
     background-color: transparent;
@@ -20,7 +21,8 @@ const RegisterHand = styled.button`
     padding: 10px;
     height: 45%;
     width: 25%;
-    margin: 18px 25px;
+    margin-left: 25px;
+    margin-top: 18px;
     background-color: transparent;
     cursor: pointer;
     transition: all .15s;
