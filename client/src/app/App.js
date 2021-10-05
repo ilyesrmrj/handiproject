@@ -1,10 +1,10 @@
 import './App.css';
 import styled from 'styled-components'
-import CommonHeader from './commonheader/commonheader';
+import CommonHeader from './common/commonheader/commonheader';
+import Home from './handiApp/home/home';
 
-const MainWrapper = styled.div`
+const HomeWrapper = styled.div`
   text-align: center ;
-  margin: 25px 50px;
   background-color: white;
   padding: 25px;
   border-radius: 10px;
@@ -13,10 +13,10 @@ const MainWrapper = styled.div`
 const App = () => {
   return (
     <>
-    <CommonHeader/>
-    <MainWrapper>
-      <h3>Hello World</h3>
-    </MainWrapper>
+      <CommonHeader/>
+      <HomeWrapper>
+        <Home/>
+      </HomeWrapper>
     </>
   );
 }
