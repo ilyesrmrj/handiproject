@@ -1,11 +1,11 @@
 import './App.css';
 import styled from 'styled-components'
-import CommonHeader from './component/commonheader/commonheader';
+import CommonHeader from './common/commonheader/commonheader';
+import Home from './handiApp/home/home';
 import HandiEngagement from './component/handiengagement/handiengagement';
 
-const MainWrapper = styled.div`
+const HomeWrapper = styled.div`
   text-align: center ;
-  margin: 25px 50px;
   background-color: white;
   padding: 25px;
   border-radius: 10px;
@@ -14,11 +14,11 @@ const MainWrapper = styled.div`
 const App = () => {
   return (
     <>
-    <CommonHeader/>
-    <HandiEngagement/>
-    <MainWrapper>
-      <h3>Hello Le sang</h3>
-    </MainWrapper>
+      <CommonHeader/>
+      <HomeWrapper>
+        <Home/>
+      </HomeWrapper>
+      <HandiEngagement/>
     </>
   );
 }
