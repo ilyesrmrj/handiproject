@@ -155,6 +155,7 @@ function rules() {
   return (
     <RuleContainer>
       <Container>
+        <Separator />
         <FlexContainer>
           <FlexRowContainer>
             <Column>
@@ -167,9 +168,9 @@ function rules() {
                 <AlignItemsCenter>
                   <QuestionBox>Tu aime HANDI ?</QuestionBox>
                   <QuestionButtons>
-                    <ButtonApprentice>Pas trop</ButtonApprentice>
-                    <ButtonApprentice>Pas trop</ButtonApprentice>
-                    <ButtonApprentice>Pas trop</ButtonApprentice>
+                    <Composentreponse1>Ouii</Composentreponse1>
+                    <Composentreponse2>Oui</Composentreponse2>
+                    <Composentreponse3>Pas trop</Composentreponse3>
                   </QuestionButtons>
                 </AlignItemsCenter>
               </Column>
@@ -246,7 +247,6 @@ function rules() {
         <Column>
           <TextArea props={fourthContainerData} />
         </Column>
-       
 
         <FlexContainer>
           <FlexRowContainer>
