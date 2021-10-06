@@ -1,13 +1,14 @@
-import './App.css';
-import CommonHeader from './common/commonHeader/commonheader';
-import HomePage from './homePage/homePage';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import DiscoverPage from './discoverPage/discoverPage';
+import "./App.css";
+import CommonHeader from "./common/commonHeader/commonheader";
+import HomePage from "./homePage/homePage";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import DiscoverPage from "./discoverPage/discoverPage";
+
 const App = () => {
   return (
     <>
       <Router>
-        <CommonHeader/>
+        <CommonHeader />
         <Switch>
           <Route path="/" exact component={() => <HomePage />} />
           <Route path="/home" exact component={() => <HomePage />} />
@@ -16,6 +17,6 @@ const App = () => {
       </Router>
     </>
   );
-}
+};
 
 export default App;

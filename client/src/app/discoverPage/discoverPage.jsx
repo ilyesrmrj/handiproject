@@ -1,16 +1,16 @@
-import React from "react"
-import TextCommonComponent from "../common/commonComponents/textCommonComponent"
-import { Wrapper } from "../common/utils/style"
-import { DiscoverPageTitle, DiscoverPageText, DiscoverButtonLabel } from "../common/utils/text"
-import { ImageDiscoverComponent } from "../common/utils/image"
+import React from "react";
+import Commitment from "./discoverComponents/commitment";
+import WhoWeAre from "./discoverComponents/whoWeAre";
+import HandiTeamComponent from "./discoverComponents/handiTeam";
 
 const DiscoverPage = () => {
-    return(
-        <Wrapper>
-            <TextCommonComponent title={DiscoverPageTitle} text={DiscoverPageText} buttonLabel={DiscoverButtonLabel} />
-            <ImageDiscoverComponent/>
-        </Wrapper>
-    )
-}
+  return (
+    <>
+      <WhoWeAre />
+      <Commitment />
+      <HandiTeamComponent />
+    </>
+  );
+};
 
-export default DiscoverPage
+export default DiscoverPage;

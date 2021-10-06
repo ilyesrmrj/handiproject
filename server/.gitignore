@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# misc
+.env
+
 # production
-/build
-.package-lock.json
+/build/*
+package-lock.json
