@@ -1,22 +1,12 @@
-import './App.css';
-import CommonHeader from './common/commonHeader/commonheader';
-import Home from './homeApp/home/home';
-import HandiEngagement from './homeApp/handiengagement/handiengagement';
-import Handiapprentissage from './homeApp/handiapprentissage/handiapprentissage';
-import SupportComponent from './homeApp/supportComponent/supportComponent';
+import Home from './home/home';
+import HandiEngagement from './handiEngagement/handiEngagement';
+import HandiApprentissage from './handiApprentissage/handiApprentissage';
+import SupportComponent from './supportComponent/supportComponent'
 
 
 
-const HomeApp = () => {
-  return (
-    <>
-      <CommonHeader/>
-      <Home/>
-      <HandiEngagement/>
-      <Handiapprentissage/>
-      <SupportComponent/>
-    </>
-  );
-}
+const HomePage = () => (
+      <><Home /><HandiEngagement /><HandiApprentissage /><SupportComponent /></>
+)
 
-export default HomeApp;
+export default HomePage;
