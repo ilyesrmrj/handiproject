@@ -5,6 +5,25 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./homePage/homePage";
 import DiscoverPage from "./discoverPage/discoverPage";
 import RulesPage from "./pages/rules/rules";
+import AppRoute from "./Route";
+
+const routes = [
+  new AppRoute({
+    name: "home",
+    path: "/",
+    reactComponent: <HomePage />,
+  }),
+  new AppRoute({
+    name: "discover",
+    path: "/decouvrir",
+    reactComponent: <DiscoverPage />,
+  }),
+  new AppRoute({
+    name: "rules",
+    path: "/regles",
+    reactComponent: <RulesPage />,
+  }),
+];
 
 const App = () => {
   return (
@@ -12,10 +31,9 @@ const App = () => {
       <Router>
         <CommonHeader />
         <Switch>
-          <Route path="/" exact component={() => <HomePage />} />
-          <Route path="/accueil" exact component={() => <HomePage />} />
-          <Route path="/découvrir+" exact component={() => <DiscoverPage />} />
-          <Route path="/règles" exact component={() => <RulesPage />} />
+          {routes.map((route) => (
+            <Route path={route.path} exact component={() => route.reactComponent} />
+          ))}
         </Switch>
       </Router>
     </>
