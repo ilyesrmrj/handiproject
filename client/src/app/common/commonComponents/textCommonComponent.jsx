@@ -4,7 +4,7 @@ import {
   TextDiv,
   Title,
   ButtonDiv,
-  ButtonApprentice,
+  BasicButton,
   TextContain,
 } from "../utils/style";
 
@@ -12,8 +12,9 @@ const Wrappertext = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 35%;
+  width: 50%;
   text-align: center;
+  padding: 2%;
 `;
 
 const TextCommonComponent = ({ title, text, buttonLabel }) => (
@@ -24,7 +25,7 @@ const TextCommonComponent = ({ title, text, buttonLabel }) => (
     </TextDiv>
     {buttonLabel ? (
       <ButtonDiv>
-        <ButtonApprentice>{buttonLabel}</ButtonApprentice>
+        <BasicButton>{buttonLabel}</BasicButton>
       </ButtonDiv>
     ) : (
       <></>

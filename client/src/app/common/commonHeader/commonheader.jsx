@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { LogoHandi } from "../utils/image";
+import { LogoHandi } from "../utils/pictures";
 import LinkList from "./headerComponents/listlink";
 import ConnectButton from "./headerComponents/connectbutton";
 
