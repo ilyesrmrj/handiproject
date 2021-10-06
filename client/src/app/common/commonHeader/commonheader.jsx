@@ -16,6 +16,7 @@ const CommonHeaderStyled = styled.div`
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+    z-index:100;
 `
 
 const  LogoContainer = styled.div`
