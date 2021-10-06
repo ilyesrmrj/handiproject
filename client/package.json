@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npm run copy",
+    "copy": "mv ./build  ../server",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -38,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "nodemon": "^2.0.13"
+    "copyfiles": "2.4.1",
+    "nodemon": "2.0.13"
   }
 }

@@ -18,12 +18,18 @@ const CommonHeaderStyled = styled.div`
     top: 0px;
 `
 
+const  LogoContainer = styled.div`
+    margin-top: 10px;
+`
+
 const CommonHeader = () => {
 
     return(
         <CommonHeaderStyled >
             <LinkList/>
-            <LogoHandi/>
+            <LogoContainer>
+                <LogoHandi/>
+            </LogoContainer>
             <ConnectButton/>
         </CommonHeaderStyled>
     )

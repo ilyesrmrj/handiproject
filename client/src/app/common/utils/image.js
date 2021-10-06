@@ -1,14 +1,14 @@
 import styled from 'styled-components'
-import logo from '../../pictures/internationalLogo.png'
-import logoHandi from '../../pictures/logohandi.png'
-import instagram from '../../pictures/instagram.png'
-import facebook from '../../pictures/facebook.png'
-import linkedin from '../../pictures/linkedin.png'
-import oms from  '../../pictures/oms.jpg'
-import sanitaireSocial from  '../../pictures/sanitaireSocial.jpg'
+import logo from '../../../pictures/internationalLogo.png'
+import logoHandi from '../../../pictures/logohandi.png'
+import instagram from '../../../pictures/instagram.png'
+import facebook from '../../../pictures/facebook.png'
+import linkedin from '../../../pictures/linkedin.png'
+import oms from  '../../../pictures/oms.jpg'
+import sanitaireSocial from  '../../../pictures/sanitaireSocial.jpg'
 
 const ImgStyle = styled.img`
-    width: 50%;
+    width: 45%;
 `
 const OmsPicture = styled.img`
     width: 100%;
@@ -18,7 +18,7 @@ const OmsPicture = styled.img`
 `
 
 const LogoStyle = styled.img`
-    width: 10%;
+    width: 40%;
 `
 const SocialMediaLogo = styled.img`
     width: 100%;
@@ -26,7 +26,7 @@ const SocialMediaLogo = styled.img`
 const SanitaireSocialPicture = styled.img`
     width: 100%;
     object-fit: cover;
-    object-position: 0 0%;
+    object-position: 0 18%;
     height: 180px;
 `
 
@@ -55,21 +55,23 @@ export const LogoList = (name) => {
 
 export const ImageSupport = (img) => {
     let image = ''
-    let constantImage = ''
+    let currentImage = ''
     switch (img) {
         case 'oms':
             image = oms
-            constantImage = OmsPicture
+            currentImage = 'oms'
             break;
         case 'sanitaireSocial':
             image = sanitaireSocial
-            constantImage = SanitaireSocialPicture
+            currentImage = 'sanitaireSocial'
             break;
         default:
             break;
     }
 
     return(
-        <constantImage src={image} alt={image}></constantImage>
+    <>
+        { currentImage === 'oms' ?  (<OmsPicture src={image} alt={image}></OmsPicture>) : (<SanitaireSocialPicture src={image} alt={image}></SanitaireSocialPicture>) }
+    </>
     )
 } 

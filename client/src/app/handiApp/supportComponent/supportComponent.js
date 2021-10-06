@@ -3,16 +3,12 @@ import TextSupportComponent from "./textSupportComponent"
 import CardComponent from "./cardComponent"
 
 
-const SupportComponent = () => {
-
-    return(
-    <>
+const SupportComponent = () => (
         <Wrapper>
             <TextSupportComponent/>
             <CardComponent/>
         </Wrapper>
-    </>
-    )
-}
+)
+
 
 export default SupportComponent

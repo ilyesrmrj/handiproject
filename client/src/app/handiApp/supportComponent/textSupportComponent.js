@@ -8,7 +8,7 @@ const Wrappertext = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 35%;
     text-align: left;
 `
 

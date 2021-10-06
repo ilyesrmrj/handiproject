@@ -3,20 +3,21 @@ import {ImageComponent} from "../../common/utils/image"
 import TextComponent from "./textHomeComponent"
 import { Wrapper } from "../../common/utils/style"
 
-const HomeWrapper = styled.div`
+const HomeContainer = styled.div`
   text-align: center ;
   background-color: white;
   padding: 25px;
+  height: auto;
 `
 
 const Home = () => {
     return(
-        <HomeWrapper>
+        <HomeContainer>
             <Wrapper>
                 <TextComponent/>
                 <ImageComponent/>
             </Wrapper>
-        </HomeWrapper>
+        </HomeContainer>
     )
 }
 
