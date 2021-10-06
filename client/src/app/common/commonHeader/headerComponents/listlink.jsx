@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { Link ,withRouter } from 'react-router-dom'
   
 const ListStyle = styled.ul`
     display: flex;
@@ -14,7 +14,7 @@ const LiStyle = styled.li`
    
 `
 
-const LinkStyle = styled.a`
+const LinkStyle = styled(Link)`
     color: gray;
     text-decoration: none;
     text-transform: uppercase;
@@ -29,10 +29,10 @@ const WrapperList = styled.div`
 const LinkList = () => {
 
     const List = [
-        'Accueil',
-        'Découvrir+',
-        'Règles',
-        'Tarifs'
+        'accueil',
+        'découvrir+',
+        'règles',
+        'tarifs'
     ]
 
     return(
@@ -42,7 +42,7 @@ const LinkList = () => {
                 {   List.map
                     (link => 
                         <LiStyle key={link}>
-                            <LinkStyle>{link}</LinkStyle>
+                            <LinkStyle to={`/${link}`} >{link}</LinkStyle>
                         </LiStyle>
                     )
                 }
@@ -52,4 +52,4 @@ const LinkList = () => {
     )
 }
 
-export default LinkList
+export default withRouter(LinkList)
