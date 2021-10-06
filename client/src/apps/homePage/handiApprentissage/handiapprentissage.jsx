@@ -57,7 +57,7 @@ border: 1.5px orange solid;
 border-radius: 40px;
 `
 
-const Handiapprentissage = () => {
+const HandiApprentissage = () => {
     return(
         <Wrapper>
             <Textapprentissage/>
@@ -73,4 +73,4 @@ const Handiapprentissage = () => {
     )
 }
 
-export default Handiapprentissage
+export default HandiApprentissage
