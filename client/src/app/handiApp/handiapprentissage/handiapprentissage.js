@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Textapprentissage from "./textapprentissagecomponent"
+import { Thefleche } from "../../common/utils/image"
 
 const Wrapper = styled.div`
     display: flex;
@@ -7,22 +8,23 @@ const Wrapper = styled.div`
     justify-content: space-between;
 `
 
+
 const Composentquestionsandanswers = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
 width: 55%;
 padding-left: 6%;
-margin: 0% 0% 10% 0%;
+margin: 0% 0% 15% 0%;
 `
 
 const Composentquestion = styled.div`
 text-align: left;
-font-size: 110%;
+font-size: 100%;
 font-family: Segoe UI;
-width: 60%;
-margin: 0% 60% 0% 0%;
-padding: 10% 10% 10% 10%;
+width: 50%;
+margin: auto;
+padding: 0% 20% 0% 20%;
 border: 1.5px blue solid;
 border-radius: 10px;
 `
@@ -31,7 +33,7 @@ const Composentreponse1 = styled.div`
 text-align: left;
 font-size: 90%;
 font-family: Segoe UI;
-margin: 10% 43% 0% 14%;
+margin: 0% 43% 0% 14%;
 padding: 1% 8% 1% 9%;
 border: 1.5px red solid;
 border-radius: 40px;
@@ -57,14 +59,29 @@ border: 1.5px orange solid;
 border-radius: 40px;
 `
 
+const Questionflechecomposentall = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin:0% 36% 9% 0%;
+padding: 0% 0% 0% 0%;
+`
+
+
 const Handiapprentissage = () => {
     return(
         <Wrapper>
             <Textapprentissage/>
+            
+            
             <Composentquestionsandanswers>
-            <Composentquestion>
-                    <h4>Quel est l'étymologie du mot handicap ?(hand in cap)</h4>
-                    </Composentquestion>
+                <Questionflechecomposentall>
+                 {Thefleche()}   
+                    <Composentquestion>
+                        <h5>Quel est l'étymologie du mot handicap ?(hand in cap)</h5>
+                    </Composentquestion>    
+                </Questionflechecomposentall>
                 <Composentreponse1>Main dans le chapeaux</Composentreponse1>
                 <Composentreponse2>Mains dans le chapeau</Composentreponse2>
                 <Composentreponse3>Main dans le chapeau</Composentreponse3> 
@@ -74,3 +91,4 @@ const Handiapprentissage = () => {
 }
 
 export default Handiapprentissage
+ 

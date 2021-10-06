@@ -1,26 +1,19 @@
 import './App.css';
-import CommonHeader from './common/commonHeader/commonheader';
+import CommonHeader from './common/commonheader/commonheader';
 import Home from './handiApp/home/home';
-<<<<<<< HEAD
-import HandiEngagement from './handiApp/handiengagement/handiengagement';
-import Handiapprentissage from './handiApp/handiapprentissage/handiapprentissage';
-=======
-import HandiEngagement from './handiApp/handiEngagement/handiengagement';
+import HandiEngagement from './handiApp/handiengagement/handiEngagement'
 import SupportComponent from './handiApp/supportComponent/supportComponent';
->>>>>>> c1a2c719642dba4a065c66d50f749cc2916ec3c5
+import Handiapprentissage from './handiApp/handiapprentissage/handiapprentissage';
 
 
 const App = () => {
-  return (
+  return ( 
     <>
       <CommonHeader/>
       <Home/>
       <HandiEngagement/>
-<<<<<<< HEAD
-      <Handiapprentissage></Handiapprentissage>
-=======
+      <Handiapprentissage/>
       <SupportComponent/>
->>>>>>> c1a2c719642dba4a065c66d50f749cc2916ec3c5
     </>
   );
 }
