@@ -6,6 +6,7 @@ import HomePage from "./homePage/homePage";
 import DiscoverPage from "./discoverPage/discoverPage";
 import RulesPage from "./pages/rules/rules";
 import AppRoute from "./Route";
+import Trouble from "./pages/troubles/trouble";
 
 const routes = [
   new AppRoute({
@@ -22,6 +23,11 @@ const routes = [
     name: "rules",
     path: "/regles",
     reactComponent: <RulesPage />,
+  }),
+  new AppRoute({
+    name: "Les troubles de DYS",
+    path: "/les-troubles-de-dys",
+    reactComponent: <Trouble />,
   }),
 ];
 
