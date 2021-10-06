@@ -59,7 +59,6 @@ border: 1.5px orange solid;
 border-radius: 40px;
 `
 
-<<<<<<< HEAD:client/src/app/handiApp/handiapprentissage/handiapprentissage.js
 const Questionflechecomposentall = styled.div`
 display: flex;
 flex-direction: row;
@@ -70,10 +69,7 @@ padding: 0% 0% 0% 0%;
 `
 
 
-const Handiapprentissage = () => {
-=======
 const HandiApprentissage = () => {
->>>>>>> aff255f82148eacc1ae1ccca97ec3b2ea4478e61:client/src/app/homePage/handiApprentissage/handiApprentissage.jsx
     return(
         <Wrapper>
             <Textapprentissage/>
@@ -94,9 +90,4 @@ const HandiApprentissage = () => {
     )
 }
 
-<<<<<<< HEAD:client/src/app/handiApp/handiapprentissage/handiapprentissage.js
-export default Handiapprentissage
- 
-=======
 export default HandiApprentissage
->>>>>>> aff255f82148eacc1ae1ccca97ec3b2ea4478e61:client/src/app/homePage/handiApprentissage/handiApprentissage.jsx

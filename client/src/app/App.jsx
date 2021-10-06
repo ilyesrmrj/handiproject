@@ -1,5 +1,5 @@
 import './App.css';
-import CommonHeader from './common/commonHeader/commonheader';
+import CommonHeader from './common/commonheader/commonheader';
 import HomePage from './homePage/homePage';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import DiscoverPage from './discoverPage/discoverPage';
