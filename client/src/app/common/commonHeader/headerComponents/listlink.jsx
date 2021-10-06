@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Link, withRouter } from "react-router-dom";
+import Route from "../../../Route";
+import HomePage from "../../../homePage/homePage";
 
 const ListStyle = styled.ul`
   display: flex;
@@ -32,6 +34,7 @@ const LinkList = () => {
     new MenuLink({
       name: "accueil",
       uri: "/",
+      
     }),
     new MenuLink({
       name: "découvrir+",
