@@ -1,10 +1,11 @@
 import styled from "styled-components"
-import Berlin from '../../font/Berlin Sans FB Regular.ttf'
+import Berlin from '../../../font/Berlin Sans FB Regular.ttf'
 
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 100%;
 `
 export const ButtonApprentice = styled.button`
     border-radius:20px;
