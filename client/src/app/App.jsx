@@ -16,17 +16,17 @@ const routes = [
   }),
   new AppRoute({
     name: "discover",
-    path: "/decouvrir",
+    path: "/discover",
     reactComponent: <DiscoverPage />,
   }),
   new AppRoute({
     name: "rules",
-    path: "/regles",
+    path: "/rules",
     reactComponent: <RulesPage />,
   }),
   new AppRoute({
     name: "Les troubles de DYS",
-    path: "/les-troubles-de-dys",
+    path: "/les-differents-troubles-de-dys",
     reactComponent: <Trouble />,
   }),
 ];

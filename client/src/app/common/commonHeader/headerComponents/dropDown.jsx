@@ -56,7 +56,7 @@ const DropDownComponent = () => (
   <DropDown>
     <DropDownUl>
       <DropDownList>
-        <LinkStyleTo to="/">
+        <LinkStyleTo to="/les-differents-troubles-de-dys">
           <LinkStyleDropDown>Les différents troubles de Dys</LinkStyleDropDown>
         </LinkStyleTo>
       </DropDownList>
