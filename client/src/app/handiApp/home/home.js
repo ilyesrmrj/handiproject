@@ -1,19 +1,22 @@
 import styled from "styled-components"
-import {ImageComponent} from "./image"
-import TextComponent from "./text"
+import {ImageComponent} from "../../common/utils/image"
+import TextComponent from "./textHomeComponent"
+import { Wrapper } from "../../common/utils/style"
 
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+const HomeWrapper = styled.div`
+  text-align: center ;
+  background-color: white;
+  padding: 25px;
 `
 
 const Home = () => {
     return(
-        <Wrapper>
-            <TextComponent/>
-            <ImageComponent/>
-        </Wrapper>
+        <HomeWrapper>
+            <Wrapper>
+                <TextComponent/>
+                <ImageComponent/>
+            </Wrapper>
+        </HomeWrapper>
     )
 }
 
