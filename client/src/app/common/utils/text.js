@@ -1,8 +1,13 @@
 
 export const HomeTitle = "Votre service d'apprentissage suivant votre handicape"
 export const HomeText = "Handi souhaite proposer une alternative ludique et intuitive à l'apprentissage formel. Notre volonté est de permettre à toutes les personnes en soif de savoir de pouvoir apprendre sans limite tout en progressant face à leur handicap. Nous souhaitons accompagner petits et grands sur le chemin de l’amélioration et ce, à leurs rythmes et sans jugement.  "
+export const HomeButtonLabel = "Commencer l'apprentisage"
 export const SupportTitle = "Ils nous soutiennent pourquoi pas vous ?"
 export const SupportText = "Retrouvez ici l’ensemble des articles qui parlent de nous. N’hésitez pas à parcourir leurs contenues pour en apprendre davantage sur notre engagement et les témoignages des personnes qui ont suivi nos formules d'apprentissage.  "
+
+export const DiscoverPageTitle = "Qui sommes nous ?"
+export const DiscoverPageText = ""
+export const DiscoverButtonLabel = "Découvrir nos portrait"
 
 
 export const HandiEngagementText = "D'autres fonctionnalités d'édition sont cachées sous Gestionnaire de Filtre Vidéo dans lequel "+
@@ -16,5 +21,23 @@ export const HandiEngagementText = "D'autres fonctionnalités d'édition sont ca
 "Cet outil est parfait pour les débutants qui ont des besoins très basiques et"+
 "doivent apprendre rapidement, car il ne vous permettra pas d'avoir plus de contrôles. "+
 "Un bon avantage de cet outil d'édition est que la vidéo et l'audio sont enregistrés dans un fichier en utilisant son format de conteneur."
-
 export const HandiEngagementTitle = "Quel est l'engagement de Handi ?"
+
+export const NavigationList = [
+    {
+        name: 'Accueil',
+        path: ''
+    },
+    {
+        name: 'Découvrir+',
+        path: 'about' 
+    },
+    {
+        name: 'Règles',
+        path: 'rules'
+    },
+    {
+        name: 'Tarifs',
+        path: 'price'
+    }
+]

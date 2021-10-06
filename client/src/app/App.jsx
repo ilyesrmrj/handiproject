@@ -10,8 +10,8 @@ const App = () => {
         <CommonHeader/>
         <Switch>
           <Route path="/" exact component={() => <HomePage />} />
-          <Route path="/accueil" exact component={() => <HomePage />} />
-          <Route path="/découvrir+" exact component={() => <DiscoverPage />} />
+          <Route path="/home" exact component={() => <HomePage />} />
+          <Route path="/about" exact component={() => <DiscoverPage />} />
         </Switch>
       </Router>
     </>

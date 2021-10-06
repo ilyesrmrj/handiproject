@@ -23,7 +23,7 @@ const  LogoContainer = styled.div`
 `
 
 const CommonHeader = () => {
-
+    
     return(
         <CommonHeaderStyled >
             <LinkList/>

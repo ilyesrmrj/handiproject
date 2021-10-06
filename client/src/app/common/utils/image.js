@@ -31,7 +31,8 @@ const SanitaireSocialPicture = styled.img`
 `
 
 
-export const ImageComponent = () => (<ImgStyle src={logo} alt='internaltional'></ImgStyle>)
+export const ImageHomeComponent = () => (<ImgStyle src={logo} alt='internaltional'></ImgStyle>)
+export const ImageDiscoverComponent = () => (<ImgStyle src={logo} alt='internaltional'></ImgStyle>)
 export const LogoHandi = () => (<LogoStyle src={logoHandi} alt='logoHandi'></LogoStyle>)
 export const LogoList = (name) => {
     let logoChoice = ''
