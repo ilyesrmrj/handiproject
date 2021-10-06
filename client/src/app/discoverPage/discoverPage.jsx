@@ -1,11 +1,16 @@
-import React from "react"
+import React from "react";
+import Commitment from "./discoverComponents/commitment";
+import WhoWeAre from "./discoverComponents/whoWeAre";
+import HandiTeamComponent from "./discoverComponents/handiTeam";
 
 const DiscoverPage = () => {
-    return(
-        <>
-            <h2>Ca marche</h2>
-        </>
-    )
-}
+  return (
+    <>
+      <WhoWeAre />
+      <Commitment />
+      <HandiTeamComponent />
+    </>
+  );
+};
 
-export default DiscoverPage
+export default DiscoverPage;

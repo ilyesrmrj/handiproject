@@ -1,7 +1,13 @@
 import styled from "styled-components";
+<<<<<<< HEAD
 import { Link, withRouter } from "react-router-dom";
 import Route from "../../../Route";
 import HomePage from "../../../homePage/homePage";
+=======
+import { withRouter } from "react-router-dom";
+import { NavigationList } from "../../utils/text";
+import DropDownComponent, { DropDown, LinkStyleTo } from "./dropDown";
+>>>>>>> master
 
 const ListStyle = styled.ul`
   display: flex;
@@ -11,6 +17,7 @@ const ListStyle = styled.ul`
 const LiStyle = styled.li`
   list-style: none;
   margin-right: 80px;
+<<<<<<< HEAD
   margin-top: 14px;
   cursor: pointer;
 `;
@@ -21,10 +28,29 @@ const LinkStyle = styled(Link)`
   text-transform: uppercase;
   &:hover {
     color: black;
+=======
+  cursor: pointer;
+`;
+
+const LinkStyle = styled.label`
+  color: gray;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  &:hover {
+    color: black;
+    & ~ ${DropDown} {
+      visibility: visible;
+      transform: translateY(-23%);
+      opacity: 1;
+    }
+>>>>>>> master
   }
 `;
 
 const WrapperList = styled.div`
+<<<<<<< HEAD
   width: 20%;
 `;
 const LinkList = () => {
@@ -60,12 +86,44 @@ const LinkList = () => {
         {urls.map((menuLink) => (
           <LiStyle key={menuLink.name}>
             <LinkStyle to={menuLink.uri}>{menuLink.name}</LinkStyle>
+=======
+  width: 25%;
+`;
+
+const ConditionalLink = ({ name, goTo, condition }) => {
+  return (
+    <>
+      {condition ? (
+        <LinkStyleTo to={goTo}>{name}</LinkStyleTo>
+      ) : (
+        <>
+          <LinkStyle htmlFor="test">{name}</LinkStyle>
+          <DropDownComponent />
+        </>
+      )}
+    </>
+  );
+};
+
+const LinkList = () => {
+  return (
+    <WrapperList>
+      <ListStyle>
+        {NavigationList.map((link) => (
+          <LiStyle key={link.name}>
+            <ConditionalLink
+              goTo={link.path}
+              condition={link.path !== "about"}
+              name={link.name}
+            ></ConditionalLink>
+>>>>>>> master
           </LiStyle>
         ))}
       </ListStyle>
     </WrapperList>
   );
 };
+<<<<<<< HEAD
 
 class MenuLink {
   constructor({ name, uri }) {
@@ -73,5 +131,7 @@ class MenuLink {
     this.uri = uri;
   }
 }
+=======
+>>>>>>> master
 
 export default withRouter(LinkList);

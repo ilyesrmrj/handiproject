@@ -1,11 +1,19 @@
 // Default text
 export const LorepIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+export const HomeTitle =
+  "Votre service d'apprentissage suivant votre handicape";
+export const HomeText =
+  "Handi souhaite proposer une alternative ludique et intuitive à l'apprentissage formel. Notre volonté est de permettre à toutes les personnes en soif de savoir de pouvoir apprendre sans limite tout en progressant face à leur handicap. Nous souhaitons accompagner petits et grands sur le chemin de l’amélioration et ce, à leurs rythmes et sans jugement.  ";
+export const HomeButtonLabel = "Commencer l'apprentisage";
 
-export const HomeTitle = "Votre service d'apprentissage suivant votre handicape"
-export const HomeText = "Handi souhaite proposer une alternative ludique et intuitive à l'apprentissage formel. Notre volonté est de permettre à toutes les personnes en soif de savoir de pouvoir apprendre sans limite tout en progressant face à leur handicap. Nous souhaitons accompagner petits et grands sur le chemin de l’amélioration et ce, à leurs rythmes et sans jugement.  "
-export const SupportTitle = "Ils nous soutiennent pourquoi pas vous ?"
-export const SupportText = "Retrouvez ici l’ensemble des articles qui parlent de nous. N’hésitez pas à parcourir leurs contenues pour en apprendre davantage sur notre engagement et les témoignages des personnes qui ont suivi nos formules d'apprentissage.  "
+export const SupportTitle = "Ils nous soutiennent pourquoi pas vous ?";
+export const SupportText =
+  "Retrouvez ici l’ensemble des articles qui parlent de nous. N’hésitez pas à parcourir leurs contenues pour en apprendre davantage sur notre engagement et les témoignages des personnes qui ont suivi nos formules d'apprentissage.  ";
 
+export const DiscoverPageTitle = "Qui sommes nous ?";
+export const DiscoverPageText =
+  "Deux étudiantes atteinte de trouble de DYS différents en co-création avec 2 étudiants en développement et 2 étudiants en réseaux ";
+export const DiscoverButtonLabel = "Découvrir nos portrait";
 
 
 export const HandiEngagementText = "D'autres fonctionnalités d'édition sont cachées sous Gestionnaire de Filtre Vidéo dans lequel "+
@@ -30,3 +38,65 @@ export const startLearning = "Commencez l'apprentissage";
 // page regles
 export const RulesTitle = "Comment bien effectuer les excercises ?";
 export const RulesText = LorepIpsum;
+
+
+export const ApprenticeShipTitle = "Comment se passe l'apprentissage ?";
+export const ApprenticeShipText = "";
+export const ApprenticeShipButton = "Les règles";
+
+export const CommitmentText =
+  "Handi souhaite proposer une alternative ludique et intuitive à l'apprentissage formel. Notre volonté est de permettre à toutes les personnes en soif de savoir de pouvoir apprendre sans limite tout en progressant face à leur handicap. Nous souhaitons accompagner petits et grands sur le chemin de l’amélioration et ce, à leurs rythmes et sans jugement. ";
+export const CommitmentTitle = "Notre Engagement";
+
+export const HandiTeamTitle = "L'Equipe Handi";
+export const TeamList = [
+  {
+    firstname: "Oceane",
+    lastname: "Mondini",
+    job: "Chargée de Communication",
+  },
+  {
+    firstname: "Maylis",
+    lastname: "Pala",
+    job: "Chargée de Communication",
+  },
+  {
+    firstname: "Quentin",
+    lastname: "Moreau",
+    job: "Développeur",
+  },
+  {
+    firstname: "Ilyess",
+    lastname: "Ramrajah",
+    job: "Développeur",
+  },
+  {
+    firstname: "Abdellah",
+    lastname: "Daoudi",
+    job: "Administrateur Système Réseaux",
+  },
+  {
+    firstname: "Marius",
+    lastname: "Lavit",
+    job: "Administrateur Système Réseaux",
+  },
+];
+
+export const NavigationList = [
+  {
+    name: "Accueil",
+    path: "",
+  },
+  {
+    name: "Découvrir+",
+    path: "about",
+  },
+  {
+    name: "Règles",
+    path: "rules",
+  },
+  {
+    name: "Tarifs",
+    path: "price",
+  },
+];
