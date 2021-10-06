@@ -1,7 +1,8 @@
 import styled from "styled-components"
-import {ImageComponent} from "../../common/utils/image"
-import TextComponent from "./textHomeComponent"
+import {ImageHomeComponent} from "../../common/utils/image"
 import { Wrapper } from "../../common/utils/style"
+import TextCommonComponent from "../../common/commonComponents/textCommonComponent"
+import { HomeTitle, HomeText, HomeButtonLabel } from "../../common/utils/text"
 
 const HomeContainer = styled.div`
   text-align: center ;
@@ -14,8 +15,8 @@ const Home = () => {
     return(
         <HomeContainer>
             <Wrapper>
-                <TextComponent/>
-                <ImageComponent/>
+                <TextCommonComponent title={HomeTitle} text={HomeText} buttonLabel={HomeButtonLabel} />
+                <ImageHomeComponent/>
             </Wrapper>
         </HomeContainer>
     )
