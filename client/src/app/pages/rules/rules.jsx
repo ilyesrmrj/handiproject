@@ -42,7 +42,7 @@ const FlexRowContainer = styled.div`
 `;
 
 
-const QuestionButtons = styled.div`
+export const QuestionButtons = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

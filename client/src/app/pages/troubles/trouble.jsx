@@ -101,7 +101,7 @@ export default function Trouble() {
             <MainImageContainer
               src={ImageDys}
               alt="Image de dys"
-            ></MainImageContainer>
+            />
           </SquareContent>
         </Row>
       </FlexContainer>

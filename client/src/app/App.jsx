@@ -8,6 +8,7 @@ import AppRoute from "./Route";
 import Trouble from "./pages/troubles/trouble";
 import PricePage from "./pricePage/pricePage";
 import Register from "./pages/registerSchool/register";
+import Cours from "./pages/cours/cours";
 
 const routes = [
   new AppRoute({
@@ -29,6 +30,11 @@ const routes = [
     name: "Les troubles de DYS",
     path: "/les-differents-troubles-de-dys",
     reactComponent: <Trouble />,
+  }),
+  new AppRoute({
+    name: "Les cours",
+    path: "/les-cours",
+    reactComponent: <Cours />,
   }),
   new AppRoute({
     name: "price",
