@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Theflechedroite } from "../../common/utils/image";
+import { Theflechedroite } from "../../common/utils/pictures";
 
 const FormationgratuiteETpayante = styled.div`
 display: flex;

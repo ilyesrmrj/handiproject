@@ -133,3 +133,8 @@ export const LogoScaleInsta = styled.div`
     }
   }
 `;
+
+export const ImageFlechereverse = styled.img`
+width: 7%;
+height: 30%;
+`;
