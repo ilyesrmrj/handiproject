@@ -1,7 +1,7 @@
 const path = require("path");
 const express = require("express");
 const app = express();
-const connection = require("./config/db");
+// const connection = require("./config/db");
 
 app.use(express.static(path.join(__dirname, "build")));
 app.get("/", (req, res) => {
