@@ -56,7 +56,6 @@ const MainImageContainer = styled.img`
   position: relative;
   width: 100%;
   overflow: hidden;
-  
 `;
 
 const dysplexieProps = {

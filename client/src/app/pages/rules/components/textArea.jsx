@@ -36,12 +36,13 @@ export const TextAreaWithButton = ({ props }) => (
       <Title>{props.title}</Title>
       <TextContain>{props.description}</TextContain>
     </TextDiv>
-    {
-      props.buttonApprentice ? (<ButtonDiv>
+    {props.buttonApprentice ? (
+      <ButtonDiv>
         <BasicButton>{props.buttonApprentice}</BasicButton>
-      </ButtonDiv>) : <></>
-    }
-    
+      </ButtonDiv>
+    ) : (
+      <></>
+    )}
   </Wrappertext>
 );
 

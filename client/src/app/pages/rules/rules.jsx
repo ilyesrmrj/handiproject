@@ -13,8 +13,12 @@ import {
   TextAreaWithButton,
   TextParagraph,
 } from "./components/textArea";
-import { FirstResponse, SecondResponse, ThirdResponse, QuestionBox } from "../../homePage/handiApprentissage/handiApprentissage";
-
+import {
+  FirstResponse,
+  SecondResponse,
+  ThirdResponse,
+  QuestionBox,
+} from "../../homePage/handiApprentissage/handiApprentissage";
 
 const FlexRowContainer = styled.div`
   display: flex;
@@ -30,7 +34,6 @@ const FlexRowContainer = styled.div`
 const RuleContainer = styled.div`
   display: block;
 `;
-
 
 const QuestionButtons = styled.div`
   display: flex;
@@ -133,9 +136,7 @@ function rules() {
         <AlignItemsCenter>
           <Column>
             <AlignItemsCenter>
-              <QuestionBox>
-                {ContainerContent2.description}
-              </QuestionBox>
+              <QuestionBox>{ContainerContent2.description}</QuestionBox>
               <SecondButtonsDivFlex>
                 <FirstResponse>Main dans le chapeaux</FirstResponse>
                 <SecondResponse>Main dans le chapeaux</SecondResponse>

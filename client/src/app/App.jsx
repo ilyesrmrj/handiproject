@@ -34,7 +34,7 @@ const routes = [
     path: "/price",
     reactComponent: <PricePage />,
   }),
-]
+];
 
 const App = () => {
   return (
@@ -43,7 +43,11 @@ const App = () => {
         <CommonHeader />
         <Switch>
           {routes.map((route) => (
-            <Route path={route.path} exact component={() => route.reactComponent} />
+            <Route
+              path={route.path}
+              exact
+              component={() => route.reactComponent}
+            />
           ))}
         </Switch>
       </Router>

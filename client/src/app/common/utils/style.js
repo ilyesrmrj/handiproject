@@ -63,8 +63,7 @@ export const CardStyle = styled.div`
   width: 70%;
   transition: all 0.3s;
   &:hover {
-    box-shadow: none;
-    border: 1px solid rgba(233, 78, 26, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   }
 `;
 
