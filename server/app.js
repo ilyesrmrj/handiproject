@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 const path = require('path')
 const express = require('express')
 const app = express()
 const connection = require('./config/config')
+=======
+const path = require("path");
+const express = require("express");
+const app = express();
+// const connection = require("./config/db");
+>>>>>>> bf4864947bcdb667897f0960d45d0ef6549619d0
 
 app.use(express.static(path.join(__dirname, 'build')))
 app.get('/', (req, res) => {
