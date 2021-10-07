@@ -80,6 +80,16 @@ const ThirdResponse = styled.div`
   }
 `;
 
+<<<<<<< HEAD
+const Questionflechecomposentall = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin:0% 36% 9% 0%;
+padding: 0% 0% 0% 0%;
+`
+=======
 const QuestionFlecheComponentAll = styled.div`
   display: flex;
   flex-direction: row;
@@ -88,6 +98,7 @@ const QuestionFlecheComponentAll = styled.div`
   margin: 5% 5%;
   width: 55%;
 `;
+>>>>>>> 66a7886fa99d677b3dee72918c2f4e39c898e332
 
 const ResponseQuestion = () => (
   <>
@@ -98,6 +109,29 @@ const ResponseQuestion = () => (
 );
 
 const HandiApprentissage = () => {
+<<<<<<< HEAD
+    return(
+        <Wrapper>
+            <Textapprentissage/>
+            
+            
+            <Composentquestionsandanswers>
+                <Questionflechecomposentall>
+                 {Thefleche()}   
+                    <Composentquestion>
+                        <h5>Quel est l'étymologie du mot handicap ?(hand in cap)</h5>
+                    </Composentquestion>    
+                </Questionflechecomposentall>
+                <Composentreponse1>Main dans le chapeaux</Composentreponse1>
+                <Composentreponse2>Mains dans le chapeau</Composentreponse2>
+                <Composentreponse3>Main dans le chapeau</Composentreponse3> 
+                </Composentquestionsandanswers>
+        </Wrapper>
+    )
+}
+
+export default HandiApprentissage
+=======
   return (
     <Wrapper>
       <TextCommonComponent
@@ -121,3 +155,4 @@ const HandiApprentissage = () => {
 };
 
 export default HandiApprentissage;
+>>>>>>> 66a7886fa99d677b3dee72918c2f4e39c898e332
