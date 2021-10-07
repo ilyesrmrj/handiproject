@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Berlin from "../../../font/Berlin Sans FB Regular.ttf";
+import { FirstResponse, QuestionBox, SecondResponse, ThirdResponse } from "../../homePage/handiApprentissage/handiApprentissage";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -87,3 +88,35 @@ export const ArticleButton = styled.div`
     border: 1px solid rgba(233, 78, 26, 0.2);
   }
 `;
+
+export const BasicAnchor = styled.a`
+  border-radius: 10px;
+  border: 2.5px solid rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255);
+  width: auto;
+  font-size: 18px;
+  padding: 10px 5%;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #000;
+  box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  &:hover {
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.2);
+  }
+`;
+
+export const SmallQuestionBox = styled(QuestionBox)`
+  padding: 1.5em;
+  text-align: center;
+`
+
+export const LargeFirstResponse = styled(FirstResponse)`
+  padding: 1em;
+`
+export const LargeSecondResponse = styled(SecondResponse)`
+  padding: 1em;
+`
+export const LargeThirdResponse = styled(ThirdResponse)`
+  padding: 1em;
+`

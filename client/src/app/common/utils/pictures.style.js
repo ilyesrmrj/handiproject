@@ -135,6 +135,14 @@ export const LogoScaleInsta = styled.div`
 `;
 
 export const ImageFlechereverse = styled.img`
-width: 7%;
-height: 30%;
+  width: 7%;
+  height: 30%;
+`;
+
+export const FitParentBoxWidthCenteredImage = styled.img`
+  position: relative;
+  width: 100%;
+
+  margin: auto;
+  align-self: center;
 `;

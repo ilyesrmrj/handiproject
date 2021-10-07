@@ -42,7 +42,7 @@ const ConditionalLink = ({ name, goTo, condition }) => {
         <LinkStyleTo to={goTo}>{name}</LinkStyleTo>
       ) : (
         <>
-          <LinkStyle htmlFor="test">{name}</LinkStyle>
+          <LinkStyle>{name}</LinkStyle>
           <DropDownComponent />
         </>
       )}

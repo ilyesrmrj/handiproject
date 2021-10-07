@@ -4,7 +4,6 @@ import {
   AlignItemsCenter,
   Column,
   Container,
-  FlexContainer,
   ContainerFluid,
   Separator,
 } from "./components/grid";
@@ -17,8 +16,18 @@ import {
   FirstResponse,
   SecondResponse,
   ThirdResponse,
-  QuestionBox,
+  QuestionBox
 } from "../../homePage/handiApprentissage/handiApprentissage";
+import { SmallQuestionBox, LargeFirstResponse, LargeSecondResponse, LargeThirdResponse} from "../../common/utils/style";
+
+
+const FlexContainer = styled.div`
+  display: flex;
+  position: relative;
+  align-items:center;
+  min-height: inherit;
+  height: inherit;
+`;
 
 const FlexRowContainer = styled.div`
   display: flex;
@@ -27,13 +36,11 @@ const FlexRowContainer = styled.div`
   background-color: white;
   max-width: 50%;
   width: 100%;
+  
 
   justify-content: center;
 `;
 
-const RuleContainer = styled.div`
-  display: block;
-`;
 
 const QuestionButtons = styled.div`
   display: flex;
@@ -101,9 +108,8 @@ const fourthContainerData = {
 
 function rules() {
   return (
-    <RuleContainer>
+    <>
       <Container>
-        <Separator />
         <FlexContainer>
           <FlexRowContainer>
             <Column>
@@ -114,7 +120,7 @@ function rules() {
             <AlignItemsCenter>
               <Column>
                 <AlignItemsCenter>
-                  <QuestionBox>Tu aime HANDI ?</QuestionBox>
+                  <SmallQuestionBox>Tu aime HANDI ?</SmallQuestionBox>
                   <QuestionButtons>
                     <FirstResponse>Ouii</FirstResponse>
                     <SecondResponse>Oui</SecondResponse>
@@ -126,8 +132,7 @@ function rules() {
           </FlexRowContainer>
         </FlexContainer>
       </Container>
-      <Separator />
-      <Separator />
+
       <Container>
         <Column>
           <TextArea props={ContainerContent2} />
@@ -138,26 +143,25 @@ function rules() {
             <AlignItemsCenter>
               <QuestionBox>{ContainerContent2.description}</QuestionBox>
               <SecondButtonsDivFlex>
-                <FirstResponse>Main dans le chapeaux</FirstResponse>
-                <SecondResponse>Main dans le chapeaux</SecondResponse>
-                <ThirdResponse>Main dans le chapeaux</ThirdResponse>
+                <LargeFirstResponse>Main dans le chapeaux</LargeFirstResponse>
+                <LargeSecondResponse>Main dans le chapeaux</LargeSecondResponse>
+                <LargeThirdResponse>Main dans le chapeaux</LargeThirdResponse>
               </SecondButtonsDivFlex>
               <SecondButtonsDivFlex>
-                <FirstResponse>Main dans le chapeaux</FirstResponse>
-                <SecondResponse>Main dans le chapeaux</SecondResponse>
-                <ThirdResponse>Main dans le chapeaux</ThirdResponse>
+                <LargeFirstResponse>Main dans le chapeaux</LargeFirstResponse>
+                <LargeSecondResponse>Main dans le chapeaux</LargeSecondResponse>
+                <LargeThirdResponse>Main dans le chapeaux</LargeThirdResponse>
               </SecondButtonsDivFlex>
               <SecondButtonsDivFlex>
-                <FirstResponse>Main dans le chapeaux</FirstResponse>
-                <SecondResponse>Main dans le chapeaux</SecondResponse>
-                <ThirdResponse>Main dans le chapeaux</ThirdResponse>
+                <LargeFirstResponse>Main dans le chapeaux</LargeFirstResponse>
+                <LargeSecondResponse>Main dans le chapeaux</LargeSecondResponse>
+                <LargeThirdResponse>Main dans le chapeaux</LargeThirdResponse>
               </SecondButtonsDivFlex>
             </AlignItemsCenter>
           </Column>
         </AlignItemsCenter>
       </Container>
-      <Separator />
-      <Separator />
+
       <ContainerFluid>
         <FlexContainer>
           <ThirdLeftContainer>
@@ -173,9 +177,9 @@ function rules() {
             <AlignItemsCenter>
               <Column>
                 <AlignItemsCenter>
-                  <QuestionBox>
+                  <SmallQuestionBox>
                     Quel est l'etymologie du mot "handicap" ?
-                  </QuestionBox>
+                  </SmallQuestionBox>
                   <QuestionButtons>
                     <FirstResponse>Main dans le chapeaux</FirstResponse>
                     <SecondResponse>Mains dans le chapeau</SecondResponse>
@@ -188,8 +192,6 @@ function rules() {
         </FlexContainer>
       </ContainerFluid>
       <Container>
-        <Separator />
-        <Separator />
         <Column>
           <TextArea props={fourthContainerData} />
         </Column>
@@ -207,9 +209,9 @@ function rules() {
             <AlignItemsCenter>
               <Column>
                 <AlignItemsCenter>
-                  <QuestionBox>
+                  <SmallQuestionBox>
                     Quel est l'étimologie du mot 'handicap' (Hand in cap)
-                  </QuestionBox>
+                  </SmallQuestionBox>
                   <QuestionButtons>
                     <FirstResponse>Oui</FirstResponse>
                     <SecondResponse>Non</SecondResponse>
@@ -220,7 +222,7 @@ function rules() {
           </FlexRowContainer>
         </FlexContainer>
       </Container>
-    </RuleContainer>
+    </>
   );
 }
 

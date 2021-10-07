@@ -67,7 +67,7 @@ export const LogoList = (name) => {
       return (
         <LogoScaleFb>
           <ToolTip>Facebook</ToolTip>
-          <FontAwesomeIcon icon="fa-brands fa-facebook-f" />
+          <FontAwesomeIcon icon="fa-brands fa-facebook" />
         </LogoScaleFb>
       );
     case "linkedin":

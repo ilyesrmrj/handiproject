@@ -37,13 +37,14 @@ export const FirstResponse = styled.div`
   text-align: center;
   font-size: 25px;
   margin: 15px 5%;
-  padding: 3% 5%;
+  padding: .5em 1em;
   border: 2px #e2e2e2cc solid;
   background-color: #fff;
   border-radius: 15px;
   color: #ea4e1b;
   transition: all 0.3;
   width: auto;
+  cursor: pointer;
   &:hover {
     border: 2px #ea4e1b solid;
     box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.2);
@@ -54,7 +55,7 @@ export const SecondResponse = styled.div`
   text-align: center;
   font-size: 25px;
   margin: 15px 5%;
-  padding: 3% 5%;
+  padding: .5em 1em;
   border: 2px #e2e2e2cc solid;
   background-color: #fff;
   border-radius: 15px;
@@ -72,7 +73,7 @@ export const ThirdResponse = styled.div`
   text-align: center;
   font-size: 25px;
   margin: 15px 5%;
-  padding: 3% 5%;
+  padding: .5em 1em;
   border: 2px #e2e2e2cc solid;
   background-color: #fff;
   border-radius: 15px;

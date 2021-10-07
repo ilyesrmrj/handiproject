@@ -1,12 +1,15 @@
 import React from "react";
+import { withRouter } from "react-router";
 import styled from "styled-components";
 import {
   TextDiv,
   Title,
   ButtonDiv,
-  BasicButton,
   TextContain,
+  BasicAnchor,
 } from "../utils/style";
+import { Link } from "react-router-dom";
+
 
 const Wrappertext = styled.div`
   display: flex;
@@ -17,7 +20,11 @@ const Wrappertext = styled.div`
   padding: 2%;
 `;
 
-const TextCommonComponent = ({ title, text, buttonLabel }) => (
+const LinkTo = styled(Link)`
+  text-decoration: none;
+`
+
+const TextCommonComponent = ({ title, text, buttonLabel, href}) => (
   <Wrappertext>
     <TextDiv>
       <Title>{title}</Title>
@@ -25,7 +32,7 @@ const TextCommonComponent = ({ title, text, buttonLabel }) => (
     </TextDiv>
     {buttonLabel ? (
       <ButtonDiv>
-        <BasicButton>{buttonLabel}</BasicButton>
+        <LinkTo to={href}><BasicAnchor>{buttonLabel}</BasicAnchor></LinkTo>
       </ButtonDiv>
     ) : (
       <></>
@@ -33,4 +40,4 @@ const TextCommonComponent = ({ title, text, buttonLabel }) => (
   </Wrappertext>
 );
 
-export default TextCommonComponent;
+export default withRouter(TextCommonComponent);

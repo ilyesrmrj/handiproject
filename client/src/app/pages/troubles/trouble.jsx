@@ -3,6 +3,7 @@ import { LorepIpsum } from "../../common/utils/text";
 import { TextArea } from "../rules/components/textArea";
 import sanitaireSocial from "../../../pictures/sanitaireSocial.jpg";
 import { Separator } from "../rules/components/grid";
+import { ImageDys, ImageDysCalculie, ImageDysGraphie, ImageDysOthographie, ImageDysPhasie, ImageDysPlexie, ImageDyspraxie } from "../../../assets/assets";
 
 const FlexContainer = styled.div`
   display: flex;
@@ -98,26 +99,14 @@ export default function Trouble() {
           </SquareContent>
           <SquareContent>
             <MainImageContainer
-              src={sanitaireSocial}
-              alt="internaltional"
+              src={ImageDys}
+              alt="Image de dys"
             ></MainImageContainer>
           </SquareContent>
         </Row>
       </FlexContainer>
       <Separator />
-      <ContentFlexContainer>
-        <Row>
-          <SquareContent>
-            <TextArea props={mainProps}></TextArea>
-          </SquareContent>
-          <SquareContent>
-            <ImageContainer
-              src={sanitaireSocial}
-              alt="internaltional"
-            ></ImageContainer>
-          </SquareContent>
-        </Row>
-      </ContentFlexContainer>
+      
       <ContentFlexContainer>
         <RowReverse>
           <SquareContent>
@@ -125,7 +114,7 @@ export default function Trouble() {
           </SquareContent>
           <SquareContent>
             <ImageContainer
-              src={sanitaireSocial}
+              src={ImageDysPlexie}
               alt="internaltional"
             ></ImageContainer>
           </SquareContent>
@@ -138,7 +127,7 @@ export default function Trouble() {
           </SquareContent>
           <SquareContent>
             <ImageContainer
-              src={sanitaireSocial}
+              src={ImageDyspraxie}
               alt="internaltional"
             ></ImageContainer>
           </SquareContent>
@@ -151,7 +140,7 @@ export default function Trouble() {
           </SquareContent>
           <SquareContent>
             <ImageContainer
-              src={sanitaireSocial}
+              src={ImageDysPhasie}
               alt="internaltional"
             ></ImageContainer>
           </SquareContent>
@@ -164,7 +153,7 @@ export default function Trouble() {
           </SquareContent>
           <SquareContent>
             <ImageContainer
-              src={sanitaireSocial}
+              src={ImageDysGraphie}
               alt="internaltional"
             ></ImageContainer>
           </SquareContent>
@@ -177,7 +166,7 @@ export default function Trouble() {
           </SquareContent>
           <SquareContent>
             <ImageContainer
-              src={sanitaireSocial}
+              src={ImageDysCalculie}
               alt="internaltional"
             ></ImageContainer>
           </SquareContent>
@@ -190,7 +179,7 @@ export default function Trouble() {
           </SquareContent>
           <SquareContent>
             <ImageContainer
-              src={sanitaireSocial}
+              src={ImageDysOthographie}
               alt="internaltional"
             ></ImageContainer>
           </SquareContent>
