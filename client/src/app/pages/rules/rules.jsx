@@ -4,7 +4,6 @@ import {
   AlignItemsCenter,
   Column,
   Container,
-  FlexContainer,
   ContainerFluid,
   Separator,
 } from "./components/grid";
@@ -13,8 +12,21 @@ import {
   TextAreaWithButton,
   TextParagraph,
 } from "./components/textArea";
-import { FirstResponse, SecondResponse, ThirdResponse, QuestionBox } from "../../homePage/handiApprentissage/handiApprentissage";
+import {
+  FirstResponse,
+  SecondResponse,
+  ThirdResponse,
+  QuestionBox,
+} from "../../homePage/handiApprentissage/handiApprentissage";
 
+
+const FlexContainer = styled.div`
+  display: flex;
+  position: relative;
+  align-items:center;
+  min-height: inherit;
+  height: inherit;
+`;
 
 const FlexRowContainer = styled.div`
   display: flex;
@@ -23,6 +35,7 @@ const FlexRowContainer = styled.div`
   background-color: white;
   max-width: 50%;
   width: 100%;
+  
 
   justify-content: center;
 `;
@@ -30,7 +43,6 @@ const FlexRowContainer = styled.div`
 const RuleContainer = styled.div`
   display: block;
 `;
-
 
 const QuestionButtons = styled.div`
   display: flex;
@@ -98,9 +110,8 @@ const fourthContainerData = {
 
 function rules() {
   return (
-    <RuleContainer>
+    <>
       <Container>
-        <Separator />
         <FlexContainer>
           <FlexRowContainer>
             <Column>
@@ -123,8 +134,7 @@ function rules() {
           </FlexRowContainer>
         </FlexContainer>
       </Container>
-      <Separator />
-      <Separator />
+
       <Container>
         <Column>
           <TextArea props={ContainerContent2} />
@@ -133,9 +143,7 @@ function rules() {
         <AlignItemsCenter>
           <Column>
             <AlignItemsCenter>
-              <QuestionBox>
-                {ContainerContent2.description}
-              </QuestionBox>
+              <QuestionBox>{ContainerContent2.description}</QuestionBox>
               <SecondButtonsDivFlex>
                 <FirstResponse>Main dans le chapeaux</FirstResponse>
                 <SecondResponse>Main dans le chapeaux</SecondResponse>
@@ -155,8 +163,7 @@ function rules() {
           </Column>
         </AlignItemsCenter>
       </Container>
-      <Separator />
-      <Separator />
+
       <ContainerFluid>
         <FlexContainer>
           <ThirdLeftContainer>
@@ -187,8 +194,6 @@ function rules() {
         </FlexContainer>
       </ContainerFluid>
       <Container>
-        <Separator />
-        <Separator />
         <Column>
           <TextArea props={fourthContainerData} />
         </Column>
@@ -219,7 +224,7 @@ function rules() {
           </FlexRowContainer>
         </FlexContainer>
       </Container>
-    </RuleContainer>
+    </>
   );
 }
 
