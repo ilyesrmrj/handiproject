@@ -88,3 +88,20 @@ export const ArticleButton = styled.div`
     border: 1px solid rgba(233, 78, 26, 0.2);
   }
 `;
+
+export const BasicAnchor = styled.a`
+  border-radius: 10px;
+  border: 2.5px solid rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255);
+  width: auto;
+  font-size: 18px;
+  padding: 10px 5%;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #000;
+  box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  &:hover {
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.2);
+  }
+`;

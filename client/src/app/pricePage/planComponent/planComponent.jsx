@@ -13,6 +13,7 @@ const PlanComponent = () => (
       title={PlanComponentTitle}
       text={PlanComponentText}
       buttonLabel={PlanComponentButton}
+      href="/register-school"
     />
     <ImagePlanComponent />
   </Wrapper>

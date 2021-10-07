@@ -6,6 +6,7 @@ import {
   ButtonDiv,
   BasicButton,
   TextContain,
+  BasicAnchor,
 } from "../utils/style";
 
 const Wrappertext = styled.div`
@@ -17,7 +18,7 @@ const Wrappertext = styled.div`
   padding: 2%;
 `;
 
-const TextCommonComponent = ({ title, text, buttonLabel }) => (
+const TextCommonComponent = ({ title, text, buttonLabel, href}) => (
   <Wrappertext>
     <TextDiv>
       <Title>{title}</Title>
@@ -25,7 +26,7 @@ const TextCommonComponent = ({ title, text, buttonLabel }) => (
     </TextDiv>
     {buttonLabel ? (
       <ButtonDiv>
-        <BasicButton>{buttonLabel}</BasicButton>
+        <BasicAnchor href={href}>{buttonLabel}</BasicAnchor>
       </ButtonDiv>
     ) : (
       <></>
