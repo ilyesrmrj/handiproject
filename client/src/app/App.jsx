@@ -7,6 +7,7 @@ import RulesPage from "./pages/rules/rules";
 import AppRoute from "./Route";
 import Trouble from "./pages/troubles/trouble";
 import PricePage from "./pricePage/pricePage";
+import Register from "./pages/registerSchool/register";
 
 const routes = [
   new AppRoute({
@@ -33,6 +34,11 @@ const routes = [
     name: "price",
     path: "/price",
     reactComponent: <PricePage />,
+  }),
+  new AppRoute({
+    name: "Register school",
+    path: "/register-school",
+    reactComponent: <Register />,
   }),
 ]
 
