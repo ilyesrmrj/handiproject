@@ -1,5 +1,5 @@
 import TextCommonComponent from "../../common/commonComponents/textCommonComponent";
-import { ImageCommitmentComponent } from "../../common/utils/image";
+import { ImageCommitmentComponent } from "../../common/utils/pictures";
 import { Wrapper } from "../../common/utils/style";
 import { CommitmentText, CommitmentTitle } from "../../common/utils/text";
 

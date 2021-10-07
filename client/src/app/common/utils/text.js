@@ -87,3 +87,8 @@ export const NavigationList = [
     path: "price",
   },
 ];
+
+export const PlanComponentTitle = "Forfait Freemium ou Forfait Premium";
+export const PlanComponentText =
+  "Handi Freemium est un espace web vous permettant de développer vos connaissances en accès libre dans plusieurs domaines. Cet espace de partage, que nous proposons, vise à construire un espace simplifié afin de rendre votre apprentissage plus ludique et efficace Notre plateforme diffuse un accès libre à certains cours généraux, un résumé des différentes sessions de travail exercées et un suivi de votre progression.";
+export const PlanComponentButton = "Je suis un établissement scolaire";
