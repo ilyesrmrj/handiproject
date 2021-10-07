@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ImageComponent } from "../../common/utils/image";
 import { LorepIpsum } from "../../common/utils/text";
 import { TextArea } from "../rules/components/textArea";
 import sanitaireSocial from "../../../pictures/sanitaireSocial.jpg";

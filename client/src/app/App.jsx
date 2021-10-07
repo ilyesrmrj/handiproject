@@ -1,12 +1,12 @@
 import "./App.css";
 import CommonHeader from "./common/commonHeader/commonheader";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
 import HomePage from "./homePage/homePage";
 import DiscoverPage from "./discoverPage/discoverPage";
 import RulesPage from "./pages/rules/rules";
 import AppRoute from "./Route";
 import Trouble from "./pages/troubles/trouble";
+import PricePage from "./pricePage/pricePage";
 
 const routes = [
   new AppRoute({
@@ -29,7 +29,12 @@ const routes = [
     path: "/les-differents-troubles-de-dys",
     reactComponent: <Trouble />,
   }),
-];
+  new AppRoute({
+    name: "price",
+    path: "/price",
+    reactComponent: <PricePage />,
+  }),
+]
 
 const App = () => {
   return (

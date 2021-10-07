@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import { LogoHandi } from "../utils/image";
+import { LogoHandi } from "../utils/pictures";
 import LinkList from "./headerComponents/listlink";
 import ConnectButton from "./headerComponents/connectbutton";
 
-const CommonHeaderStyled = styled.div`
+const CommonHeaderStyled = styled.section`
     text-align:center ;
-    background-color: rgb(255,255,255,0.9);
-    backdrop-filter: blur(15px);
+    background-color: rgb(255,255,255);
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -17,6 +16,7 @@ const CommonHeaderStyled = styled.div`
     position: sticky;
     top: 0px;
     z-index:100;
+    height: 5vh;
 `
 
 const LogoContainer = styled.div`

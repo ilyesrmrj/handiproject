@@ -61,7 +61,7 @@ const DropDownComponent = () => (
         </LinkStyleTo>
       </DropDownList>
       <DropDownList>
-        <LinkStyleTo to="about">
+        <LinkStyleTo to="/discover">
           <LinkStyleDropDown>Qui sommes nous ?</LinkStyleDropDown>
         </LinkStyleTo>
       </DropDownList>

@@ -5,7 +5,7 @@ import {
   DiscoverPageText,
   DiscoverButtonLabel,
 } from "../../common/utils/text";
-import { ImageDiscoverComponent } from "../../common/utils/image";
+import { ImageDiscoverComponent } from "../../common/utils/pictures";
 
 const WhoWeAre = () => (
   <Wrapper>

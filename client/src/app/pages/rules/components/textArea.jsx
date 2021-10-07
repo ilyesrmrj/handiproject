@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  ButtonApprentice,
+  BasicButton,
   ButtonDiv,
   TextContain,
   TextDiv,
@@ -36,9 +36,12 @@ export const TextAreaWithButton = ({ props }) => (
       <Title>{props.title}</Title>
       <TextContain>{props.description}</TextContain>
     </TextDiv>
-    <ButtonDiv>
-      <ButtonApprentice>{props.buttonApprentice}</ButtonApprentice>
-    </ButtonDiv>
+    {
+      props.buttonApprentice ? (<ButtonDiv>
+        <BasicButton>{props.buttonApprentice}</BasicButton>
+      </ButtonDiv>) : <></>
+    }
+    
   </Wrappertext>
 );
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TheFleche } from "../../common/utils/image";
+import { TheFleche } from "../../common/utils/pictures";
 import { Wrapper } from "../../common/utils/style";
 import TextCommonComponent from "../../common/commonComponents/textCommonComponent";
 import {
@@ -18,65 +18,71 @@ const QuestionReponseComponent = styled.div`
   padding-left: 6%;
 `;
 
-const Composentquestion = styled.div`
+export const QuestionBox = styled.div`
   text-align: right;
   font-size: 25px;
   width: 100%;
   padding: 2% 5%;
-  border: 3px #2daae1 solid;
+  border: 3px transparent solid;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 20px;
-  color: gray;
+  color: rgba(45, 170, 225);
   & ~ p ~ p {
     margin: 0;
     padding: 0;
   }
 `;
 
-const FirstResponse = styled.div`
-  text-align: left;
+export const FirstResponse = styled.div`
+  text-align: center;
   font-size: 25px;
   margin: 15px 5%;
-  padding: 1% 3%;
-  border: 3px #ea4e1b solid;
-  border-radius: 20px;
-  color: gray;
-  transition: all 0.2s;
-  cursor: pointer;
+  padding: 3% 5%;
+  border: 2px #e2e2e2cc solid;
+  background-color: #fff;
+  border-radius: 15px;
+  color: #ea4e1b;
+  transition: all 0.3;
+  width: auto;
   &:hover {
-    background-color: #ea4e1b;
-    color: white;
+    border: 2px #ea4e1b solid;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.2);
   }
 `;
 
-const SecondResponse = styled.div`
-  text-align: left;
+export const SecondResponse = styled.div`
+  text-align: center;
   font-size: 25px;
   margin: 15px 5%;
-  padding: 1% 3%;
-  border: 3px #30ac66 solid;
-  border-radius: 20px;
-  color: gray;
-  transition: all 0.2s;
+  padding: 3% 5%;
+  border: 2px #e2e2e2cc solid;
+  background-color: #fff;
+  border-radius: 15px;
+  color: #30ac66;
+  transition: all 0.3s;
   cursor: pointer;
+  width: auto;
   &:hover {
-    background-color: #30ac66;
-    color: white;
+    border: 2px #30ac66 solid;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.2);
   }
 `;
 
-const ThirdResponse = styled.div`
-  text-align: left;
+export const ThirdResponse = styled.div`
+  text-align: center;
   font-size: 25px;
   margin: 15px 5%;
-  padding: 1% 3%;
-  border: 3px #f9b232 solid;
-  border-radius: 20px;
-  color: gray;
-  transition: all 0.2s;
+  padding: 3% 5%;
+  border: 2px #e2e2e2cc solid;
+  background-color: #fff;
+  border-radius: 15px;
+  color: #f9b232;
+  transition: all 0.3s;
   cursor: pointer;
+  width: auto;
   &:hover {
-    background-color: #f9b232;
-    color: white;
+    border: 2px #f9b232 solid;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -108,11 +114,11 @@ const HandiApprentissage = () => {
       <QuestionReponseComponent>
         <QuestionFlecheComponentAll>
           {TheFleche()}
-          <Composentquestion>
+          <QuestionBox>
             <p>
               Quel est l'étymologie du mot handicap ?<p>(Hand in cap)</p>
             </p>
-          </Composentquestion>
+          </QuestionBox>
         </QuestionFlecheComponentAll>
         <ResponseQuestion />
       </QuestionReponseComponent>

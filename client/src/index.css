@@ -10,7 +10,7 @@ body {
 }
 
 body > #root > div {
-  
+  height: 99vh;
   font-family: Arial, sans-serif;
 }
 

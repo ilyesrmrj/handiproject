@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ButtonApprentice } from "../../common/utils/style";
 import { RulesText, RulesTitle, startLearning } from "../../common/utils/text";
 import {
   AlignItemsCenter,
@@ -14,22 +13,12 @@ import {
   TextAreaWithButton,
   TextParagraph,
 } from "./components/textArea";
+import { FirstResponse, SecondResponse, ThirdResponse, QuestionBox } from "../../homePage/handiApprentissage/handiApprentissage";
 
-// const Container = styled.div`
-//   text-align: center;
-//   background-color: white;
-//   padding: 25px;
-//   height: auto;
-// `;
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
 
 const FlexRowContainer = styled.div`
   display: flex;
   flex-direction: row;
-
   height: auto;
   background-color: white;
   max-width: 50%;
@@ -42,12 +31,6 @@ const RuleContainer = styled.div`
   display: block;
 `;
 
-const QuestionBox = styled.div`
-  position: relative;
-  padding: 3.5rem 7rem;
-  border: 2px solid #2daae1;
-  border-radius: 24px;
-`;
 
 const QuestionButtons = styled.div`
   display: flex;
@@ -61,7 +44,7 @@ const QuestionButtons = styled.div`
 const ContainerContent1 = {
   title: RulesTitle,
   description: RulesText,
-  buttonApprentice: startLearning,
+  BasicButton: startLearning,
 };
 
 // 2 container //
@@ -70,17 +53,9 @@ const SecondButtonsDivFlex = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 50%;
   gap: 2.5rem;
   padding: 1rem;
-`;
-
-const SecondQuestionBox = styled.div`
-  position: relative;
-  padding: 3.5rem;
-  border: 2px solid #2daae1;
-  border-radius: 24px;
-  width: 50%;
+  width: 100%;
 `;
 
 const ContainerContent2 = {
@@ -90,11 +65,11 @@ const ContainerContent2 = {
 
 //-------------- 3 container
 
-const ThirdContainer = styled.div`
-  position: relative;
-  display: flex;
-  width: 100%;
-`;
+// const ThirdContainer = styled.div`
+//   position: relative;
+//   display: flex;
+//   width: 100%;
+// `;
 
 const ThirdLeftContainer = styled.div`
   position: relative;
@@ -121,36 +96,6 @@ const fourthContainerData = {
   description: RulesText,
 };
 
-const Composentreponse1 = styled.div`
-  text-align: left;
-  font-size: 90%;
-  font-family: Segoe UI;
-
-  padding: 1% 8% 1% 9%;
-  border: 1.5px red solid;
-  border-radius: 40px;
-`;
-
-const Composentreponse2 = styled.div`
-  text-align: left;
-  font-size: 90%;
-  font-family: Segoe UI;
-
-  padding: 1% 8% 1% 9%;
-  border: 1.5px green solid;
-  border-radius: 40px;
-`;
-
-const Composentreponse3 = styled.div`
-  text-align: left;
-  font-size: 90%;
-  font-family: Segoe UI;
-
-  padding: 1% 8% 1% 9%;
-  border: 1.5px orange solid;
-  border-radius: 40px;
-`;
-
 function rules() {
   return (
     <RuleContainer>
@@ -168,9 +113,9 @@ function rules() {
                 <AlignItemsCenter>
                   <QuestionBox>Tu aime HANDI ?</QuestionBox>
                   <QuestionButtons>
-                    <Composentreponse1>Ouii</Composentreponse1>
-                    <Composentreponse2>Oui</Composentreponse2>
-                    <Composentreponse3>Pas trop</Composentreponse3>
+                    <FirstResponse>Ouii</FirstResponse>
+                    <SecondResponse>Oui</SecondResponse>
+                    <ThirdResponse>Pas trop</ThirdResponse>
                   </QuestionButtons>
                 </AlignItemsCenter>
               </Column>
@@ -188,23 +133,23 @@ function rules() {
         <AlignItemsCenter>
           <Column>
             <AlignItemsCenter>
-              <SecondQuestionBox>
+              <QuestionBox>
                 {ContainerContent2.description}
-              </SecondQuestionBox>
+              </QuestionBox>
               <SecondButtonsDivFlex>
-                <ButtonApprentice>Main dans le chapeaux</ButtonApprentice>
-                <ButtonApprentice>Main dans le chapeaux</ButtonApprentice>
-                <ButtonApprentice>Main dans le chapeaux</ButtonApprentice>
+                <FirstResponse>Main dans le chapeaux</FirstResponse>
+                <SecondResponse>Main dans le chapeaux</SecondResponse>
+                <ThirdResponse>Main dans le chapeaux</ThirdResponse>
               </SecondButtonsDivFlex>
               <SecondButtonsDivFlex>
-                <ButtonApprentice>Main dans le chapeaux</ButtonApprentice>
-                <ButtonApprentice>Main dans le chapeaux</ButtonApprentice>
-                <ButtonApprentice>Main dans le chapeaux</ButtonApprentice>
+                <FirstResponse>Main dans le chapeaux</FirstResponse>
+                <SecondResponse>Main dans le chapeaux</SecondResponse>
+                <ThirdResponse>Main dans le chapeaux</ThirdResponse>
               </SecondButtonsDivFlex>
               <SecondButtonsDivFlex>
-                <ButtonApprentice>Main dans le chapeaux</ButtonApprentice>
-                <ButtonApprentice>Main dans le chapeaux</ButtonApprentice>
-                <ButtonApprentice>Main dans le chapeaux</ButtonApprentice>
+                <FirstResponse>Main dans le chapeaux</FirstResponse>
+                <SecondResponse>Main dans le chapeaux</SecondResponse>
+                <ThirdResponse>Main dans le chapeaux</ThirdResponse>
               </SecondButtonsDivFlex>
             </AlignItemsCenter>
           </Column>
@@ -231,9 +176,9 @@ function rules() {
                     Quel est l'etymologie du mot "handicap" ?
                   </QuestionBox>
                   <QuestionButtons>
-                    <Composentreponse1>Main dans le chapeaux</Composentreponse1>
-                    <Composentreponse2>Mains dans le chapeau</Composentreponse2>
-                    <Composentreponse3>Main dans le chapeau</Composentreponse3>
+                    <FirstResponse>Main dans le chapeaux</FirstResponse>
+                    <SecondResponse>Mains dans le chapeau</SecondResponse>
+                    <ThirdResponse>Main dans le chapeau</ThirdResponse>
                   </QuestionButtons>
                 </AlignItemsCenter>
               </Column>
@@ -265,8 +210,8 @@ function rules() {
                     Quel est l'étimologie du mot 'handicap' (Hand in cap)
                   </QuestionBox>
                   <QuestionButtons>
-                    <Composentreponse1>Oui</Composentreponse1>
-                    <Composentreponse2>Non</Composentreponse2>
+                    <FirstResponse>Oui</FirstResponse>
+                    <SecondResponse>Non</SecondResponse>
                   </QuestionButtons>
                 </AlignItemsCenter>
               </Column>
