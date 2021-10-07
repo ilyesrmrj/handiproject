@@ -1,0 +1,31 @@
+{
+  "name": "handiproject",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "npm run start --prefix server",
+    "dev:concurrently": "concurrently \"npm:dev:server\" ",
+    "dev": "npm run build --prefix client && npm run dev:concurrently",
+    "pq:client": "npm run pq --prefix client",
+    "pq:server": "npm run pq --prefix server",
+    "pq:concurrently": "concurrently \"npm:pq:client\" \"npm:pq:server\" ",
+    "pq": "npm run pq:concurrently"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyesrmrj/handiproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilyesrmrj/handiproject/issues"
+  },
+  "homepage": "https://github.com/ilyesrmrj/handiproject#readme",
+  "devDependencies": {
+    "@azz/prettier-config": "1.0.0",
+    "concurrently": "5.3.0",
+    "prettier": "2.4.1",
+    "pretty-quick": "3.1.1"
+  }
+}

@@ -1,15 +1,14 @@
-import React from "react";
-import { withRouter } from "react-router";
-import styled from "styled-components";
+import React from 'react'
+import { withRouter } from 'react-router'
+import styled from 'styled-components'
 import {
   TextDiv,
   Title,
   ButtonDiv,
   TextContain,
   BasicAnchor,
-} from "../utils/style";
-import { Link } from "react-router-dom";
-
+} from '../utils/style'
+import { Link } from 'react-router-dom'
 
 const Wrappertext = styled.div`
   display: flex;
@@ -18,13 +17,13 @@ const Wrappertext = styled.div`
   width: 50%;
   text-align: center;
   padding: 2%;
-`;
+`
 
 const LinkTo = styled(Link)`
   text-decoration: none;
 `
 
-const TextCommonComponent = ({ title, text, buttonLabel, href}) => (
+const TextCommonComponent = ({ title, text, buttonLabel, href }) => (
   <Wrappertext>
     <TextDiv>
       <Title>{title}</Title>
@@ -32,12 +31,18 @@ const TextCommonComponent = ({ title, text, buttonLabel, href}) => (
     </TextDiv>
     {buttonLabel ? (
       <ButtonDiv>
-        <LinkTo to={href}><BasicAnchor>{buttonLabel}</BasicAnchor></LinkTo>
+        {href ? (
+          <LinkTo to={href}>
+            <BasicAnchor>{buttonLabel}</BasicAnchor>
+          </LinkTo>
+        ) : (
+          <BasicAnchor>{buttonLabel}</BasicAnchor>
+        )}
       </ButtonDiv>
     ) : (
       <></>
     )}
   </Wrappertext>
-);
+)
 
-export default withRouter(TextCommonComponent);
+export default TextCommonComponent
