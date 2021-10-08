@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components'
+import { LinkStyleTo } from './dropDown'
 
 const ConnectHand = styled.button`
   border-radius: 10px;
@@ -16,7 +17,7 @@ const ConnectHand = styled.button`
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
       rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
-`;
+`
 const RegisterHand = styled.button`
   border-radius: 10px;
   border: 2px solid transparent;
@@ -33,17 +34,19 @@ const RegisterHand = styled.button`
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
       rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
-`;
+`
 const ConnectWrapper = styled.div`
   width: 25%;
-`;
+`
 const ConnectButton = () => {
   return (
     <ConnectWrapper>
       <ConnectHand>Connexion</ConnectHand>
-      <RegisterHand>Inscription</RegisterHand>
+      <LinkStyleTo to="/register">
+        <RegisterHand>Inscription</RegisterHand>
+      </LinkStyleTo>
     </ConnectWrapper>
-  );
-};
+  )
+}
 
-export default ConnectButton;
+export default ConnectButton

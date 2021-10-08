@@ -1,13 +1,12 @@
-import styled from "styled-components";
-import { LogoHandi } from "../utils/pictures";
-import LinkList from "./headerComponents/listlink";
-import ConnectButton from "./headerComponents/connectbutton";
+import styled from 'styled-components'
+import { LogoHandi } from '../utils/pictures'
+import LinkList from './headerComponents/listlink'
+import ConnectButton from './headerComponents/connectbutton'
 
 const CommonHeaderStyled = styled.section`
   text-align: center;
   background-color: rgb(255, 255, 255);
   padding: 10px;
-  height: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,12 +15,14 @@ const CommonHeaderStyled = styled.section`
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-`;
+  z-index: 100;
+  height: 5vh;
+`
 
 const LogoContainer = styled.div`
   margin-top: 10px;
   width: 25%;
-`;
+`
 
 const CommonHeader = () => {
   return (
@@ -32,7 +33,7 @@ const CommonHeader = () => {
       </LogoContainer>
       <ConnectButton />
     </CommonHeaderStyled>
-  );
-};
+  )
+}
 
-export default CommonHeader;
+export default CommonHeader

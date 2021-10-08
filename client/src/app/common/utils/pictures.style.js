@@ -1,49 +1,65 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ImgStyle = styled.img`
-  width: 45%;
+  width: 50%;
   height: 50%;
-`;
+`
 
+export const ImgStyleHome = styled.img`
+  width: 100%;
+  height: 50%;
+`
 export const ImgPhoneCheck = styled.img`
-  width: 35%;
-`;
+  width: 60%;
+`
 
 export const ImgCommitment = styled.img`
   width: 100%;
   height: 50%;
-`;
+`
+export const ImgTeam = styled.img`
+  width: 150px;
+  height: 250px;
+  border: 1px solid red;
+  object-fit: cover;
+  object-position: 0 40%;
+  border-radius: 30px;
+  border-width: 3px;
+  border-color: black;
+`
 
 export const OmsPicture = styled.img`
   width: 100%;
   object-fit: cover;
   object-position: 0 70%;
   height: 180px;
-`;
+`
 export const PictureContainer = styled.div`
   background-color: #def2e6;
   display: flex;
-  justify-content: center;
-  padding: 5.5% 10%;
-`;
+  justify-content: right;
+  padding-top: 6%;
+  padding-bottom: 12%;
+  padding-left: 10%;
+`
 
 export const LogoStyle = styled.img`
   width: 40%;
-`;
+`
 export const ImageFleche = styled.img`
   width: 10%;
   height: 50%;
-`;
+`
 
 export const SocialMediaLogo = styled.img`
   width: 100%;
-`;
+`
 export const SanitaireSocialPicture = styled.img`
   width: 100%;
   object-fit: cover;
   object-position: 0 18%;
   height: 180px;
-`;
+`
 
 export const ToolTip = styled.div`
   position: absolute;
@@ -59,7 +75,7 @@ export const ToolTip = styled.div`
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     height: 8px;
     width: 8px;
     background-color: #ffffff;
@@ -68,7 +84,7 @@ export const ToolTip = styled.div`
     transform: translate(-50%) rotate(45deg);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-`;
+`
 
 export const LogoScaleFb = styled.div`
   font-size: 30px;
@@ -90,7 +106,7 @@ export const LogoScaleFb = styled.div`
       background-color: #3b5999;
     }
   }
-`;
+`
 export const LogoScaleLink = styled.div`
   font-size: 30px;
   border-radius: 20px;
@@ -111,7 +127,7 @@ export const LogoScaleLink = styled.div`
       background-color: #0e76a8;
     }
   }
-`;
+`
 export const LogoScaleInsta = styled.div`
   font-size: 30px;
   border-radius: 20px;
@@ -132,9 +148,17 @@ export const LogoScaleInsta = styled.div`
       background-color: #e1306c;
     }
   }
-`;
+`
 
 export const ImageFlechereverse = styled.img`
-width: 7%;
-height: 30%;
-`;
+  width: 7%;
+  height: 30%;
+`
+
+export const FitParentBoxWidthCenteredImage = styled.img`
+  position: relative;
+  width: 100%;
+
+  margin: auto;
+  align-self: center;
+`

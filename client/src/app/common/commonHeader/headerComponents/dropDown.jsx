@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const DropDown = styled.div`
   background-color: rgb(255, 255, 255);
@@ -18,7 +18,7 @@ export const DropDown = styled.div`
     opacity: 1;
     transform: translateY(-23%);
   }
-`;
+`
 export const LinkStyleTo = styled(Link)`
   color: gray;
   text-decoration: none;
@@ -26,7 +26,7 @@ export const LinkStyleTo = styled(Link)`
   &:hover {
     color: black;
   }
-`;
+`
 
 const DropDownUl = styled.ul`
   display: flex;
@@ -34,13 +34,13 @@ const DropDownUl = styled.ul`
   justify-content: center;
   text-align: left;
   padding: 15px;
-`;
+`
 
 const DropDownList = styled.li`
   list-style: none;
   font-size: 14px;
   margin: 10px 0;
-`;
+`
 
 const LinkStyleDropDown = styled.label`
   color: gray;
@@ -50,23 +50,23 @@ const LinkStyleDropDown = styled.label`
   &:hover {
     color: black;
   }
-`;
+`
 
 const DropDownComponent = () => (
   <DropDown>
     <DropDownUl>
       <DropDownList>
-        <LinkStyleTo to="/">
+        <LinkStyleTo to="/les-differents-troubles-de-dys">
           <LinkStyleDropDown>Les différents troubles de Dys</LinkStyleDropDown>
         </LinkStyleTo>
       </DropDownList>
       <DropDownList>
-        <LinkStyleTo to="about">
+        <LinkStyleTo to="/discover">
           <LinkStyleDropDown>Qui sommes nous ?</LinkStyleDropDown>
         </LinkStyleTo>
       </DropDownList>
     </DropDownUl>
   </DropDown>
-);
+)
 
-export default DropDownComponent;
+export default DropDownComponent
