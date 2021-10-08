@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ImageBlueTeam } from "../../../assets/assets";
 import { FitParentBoxWidthCenteredImage } from "../../common/utils/pictures.style";
-import { LorepIpsum } from "../../common/utils/text";
+import { SchoolText } from "../../common/utils/text";
 import { TextArea } from "../rules/components/textArea";
 
 
@@ -23,7 +23,7 @@ const SquareContent = styled.div`
 
 const mainProps = {
   title: "Je suis un etablissement scolaire",
-  description: LorepIpsum,
+  description: SchoolText,
 };
 
 const RegisterForm = styled.form`
@@ -50,7 +50,7 @@ const FormInput = styled.input`
 
 const Hseparator = styled.hr`
   width: 75%;
-  heigth: 1px;
+  height: 1px;
   border: none;
   background-color: silver;
 `;

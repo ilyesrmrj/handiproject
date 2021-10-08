@@ -1,17 +1,31 @@
 import styled from 'styled-components'
 
 export const ImgStyle = styled.img`
-  width: 45%;
+  width: 50%;
   height: 50%;
 `
 
+export const ImgStyleHome = styled.img`
+  width: 100%;
+  height: 50%;
+`
 export const ImgPhoneCheck = styled.img`
-  width: 35%;
+  width: 60%;
 `
 
 export const ImgCommitment = styled.img`
   width: 100%;
   height: 50%;
+`
+export const ImgTeam = styled.img`
+  width: 150px;
+  height: 250px;
+  border: 1px solid red;
+  object-fit: cover;
+  object-position: 0 40%;
+  border-radius: 30px;
+  border-width: 3px;
+  border-color: black;
 `
 
 export const OmsPicture = styled.img`
@@ -23,8 +37,10 @@ export const OmsPicture = styled.img`
 export const PictureContainer = styled.div`
   background-color: #def2e6;
   display: flex;
-  justify-content: center;
-  padding: 5.5% 10%;
+  justify-content: right;
+  padding-top: 6%;
+  padding-bottom: 12%;
+  padding-left: 10%;
 `
 
 export const LogoStyle = styled.img`

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { RulesText, RulesTitle, startLearning } from "../../common/utils/text";
+import { RulesText, RulesTitle, startLearning, LoremIpsum, ExoTwo, ExoOne } from '../../common/utils/text';
 import {
   AlignItemsCenter,
   Column,
@@ -72,16 +72,8 @@ const SecondButtonsDivFlex = styled.div`
 
 const ContainerContent2 = {
   title: "Exercice N'1",
-  description: RulesText,
+  description: ExoOne,
 };
-
-//-------------- 3 container
-
-// const ThirdContainer = styled.div`
-//   position: relative;
-//   display: flex;
-//   width: 100%;
-// `;
 
 const ThirdLeftContainer = styled.div`
   position: relative;
@@ -99,13 +91,14 @@ const ThirdLeftContainerTextArea = styled.div`
 
 const thirdContainerContent = {
   title: "Exercice N'2",
-  description: RulesText,
+  description: ExoTwo,
 };
 
 // 4 container (3ieme exerice)
 const fourthContainerData = {
   title: "Exercice N'3",
   description: RulesText,
+  loremIpsum: LoremIpsum
 };
 
 function rules() {
@@ -197,13 +190,12 @@ function rules() {
         <Column>
           <TextArea title={fourthContainerData.title} description={fourthContainerData.description} />
         </Column>
-
         <FlexContainer>
           <FlexRowContainer>
             <Column>
-              <TextParagraph title={fourthContainerData.title} description={fourthContainerData.description}/>
-              <TextParagraph title={fourthContainerData.title} description={fourthContainerData.description}/>
-              <TextParagraph title={fourthContainerData.title} description={fourthContainerData.description}/>
+              <TextParagraph title={fourthContainerData.title} description={fourthContainerData.loremIpsum}/>
+              <TextParagraph title={fourthContainerData.title} description={fourthContainerData.loremIpsum}/>
+              <TextParagraph title={fourthContainerData.title} description={fourthContainerData.loremIpsum}/>
               <Separator />
             </Column>
           </FlexRowContainer>

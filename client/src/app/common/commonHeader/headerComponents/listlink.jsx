@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import { withRouter } from 'react-router-dom'
-import { NavigationList } from '../../utils/text'
+import { NavigationList } from '../../utils/text.ts'
 import DropDownComponent, { DropDown, LinkStyleTo } from './dropDown'
 
 const ListStyle = styled.ul`

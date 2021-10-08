@@ -1,3 +1,4 @@
+import { ImgTeamList } from "../../../common/utils/pictures";
 import { HandiTeamTitle, TeamList } from "../../../common/utils/text";
 import {
   HandiTeamTitleStyled,
@@ -17,7 +18,7 @@ const HandiTeamComponent = () => {
       <TeamListUl>
         {TeamList.map((member) => (
           <TeamListStyle key={member.firstname}>
-            <ImgDiv></ImgDiv>
+            {ImgTeamList(member.firstname)}
             <MemberFirstname>{member.firstname}</MemberFirstname>
             <MemberLastname>{member.lastname}</MemberLastname>
             <MemberJob>{member.job}</MemberJob>

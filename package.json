@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:server": "npm run start --prefix server",
-    "dev:concurrently": "concurrently \"npm:dev:server\" ",
-    "dev": "npm run build --prefix client && npm run dev:concurrently",
+    "dev:client": "npm run start --prefix client",
+    "dev:concurrently": "concurrently \"npm:dev:server\" \"npm:dev:client\" ",
+    "dev": "npm run dev:concurrently",
     "pq:client": "npm run pq --prefix client",
     "pq:server": "npm run pq --prefix server",
     "pq:concurrently": "concurrently \"npm:pq:client\" \"npm:pq:server\" ",

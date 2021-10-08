@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {
+  HandiEngagementButton,
   HandiEngagementText,
   HandiEngagementTitle,
 } from "../../../common/utils/text";
@@ -45,7 +46,7 @@ const HandiEngagement = () => (
   <Componentpage>
     <TitleEngagement>{HandiEngagementTitle}</TitleEngagement>
     <Componenttexte>{HandiEngagementText}</Componenttexte>
-    <Componentbutton>Découvrez nos valeurs</Componentbutton>
+    <Componentbutton>{HandiEngagementButton}</Componentbutton>
   </Componentpage>
 );
 

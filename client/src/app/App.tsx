@@ -10,6 +10,7 @@ import Trouble from "./pages/troubles/trouble";
 import PricePage from "./pages/price/pricePage";
 import Register from "./pages/registerSchool/register";
 import { getUser } from "../services/request.service";
+import RegisterForm from "./pages/registerForm/registerForm";
 
 const routes = [
   new AppRoute({
@@ -41,6 +42,11 @@ const routes = [
     name: "Register school",
     path: "/register-school",
     reactComponent: <Register />,
+  }),  
+  new AppRoute({
+    name: "Inscription",
+    path: "/register",
+    reactComponent: <RegisterForm />,
   }),
 ];
 

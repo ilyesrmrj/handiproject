@@ -29,6 +29,7 @@
     "pretty-quick": "pretty-quick",
     "pq": "npm run pretty-quick -- --pattern 'client/**/*.*(js|jsx|ts|scss|css|md)'"
   },
+  "proxy":"http://localhost:3030",
   "eslintConfig": {
     "extends": [
       "react-app",

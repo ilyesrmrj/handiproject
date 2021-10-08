@@ -6,7 +6,6 @@ import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
 export const CardPrice = styled(CardStyle)`
   width: 20%;
   height: 100%;
-  overflow: auto;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `
 
@@ -14,6 +13,7 @@ export const WrapperPrice = styled(Wrapper)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 10vh;
 `
 
 export const CardContain = styled.div`

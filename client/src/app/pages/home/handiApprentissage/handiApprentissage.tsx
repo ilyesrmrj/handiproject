@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { TheFleche } from "../../../common/utils/pictures";
 import { Wrapper } from "../../../common/utils/style";
 import TextCommonComponent from "../../../common/commonComponents/textCommonComponent";
+import { ApprenticeShipText } from '../../../common/utils/text';
 import {
   ApprenticeShipButton,
   ApprenticeShipTitle,
-  HandiEngagementText,
 } from "../../../common/utils/text";
 
 const QuestionReponseComponent = styled.div`
@@ -92,8 +92,8 @@ const QuestionFlecheComponentAll = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 5% 5%;
-  width: 55%;
+  margin: 5% 10%;
+  width: 100%;
 `;
 
 const ResponseQuestion = () => (
@@ -109,7 +109,7 @@ const HandiApprentissage = () => {
     <Wrapper>
       <TextCommonComponent
         title={ApprenticeShipTitle}
-        text={HandiEngagementText}
+        text={ApprenticeShipText}
         buttonLabel={ApprenticeShipButton}
         href={'rules'}/>
       <QuestionReponseComponent>

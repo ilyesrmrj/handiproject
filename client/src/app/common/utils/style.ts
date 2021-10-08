@@ -6,6 +6,7 @@ import {
   SecondResponse,
   ThirdResponse
 } from '../../pages/home/handiApprentissage/handiApprentissage'
+import Card from '../../pages/home/supportComponent/card/card'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -13,6 +14,10 @@ export const Wrapper = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 100%;
+`
+
+export const FormWrapper = styled(Wrapper)`
+  justify-content: center;
 `
 export const BasicButton = styled.button`
   border-radius: 10px;
@@ -119,5 +124,11 @@ export const LargeSecondResponse = styled(SecondResponse)`
   padding: 1em;
 `
 export const LargeThirdResponse = styled(ThirdResponse)`
+  padding: 1em;
+`
+
+export const CardForm = styled(CardStyle)`
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 50%;
   padding: 1em;
 `

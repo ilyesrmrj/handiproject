@@ -21,6 +21,7 @@ export const TeamListUl = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
 `
 
 export const TeamListStyle = styled.li`

@@ -14,7 +14,7 @@ const Wrappertext = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: auto;
   text-align: center;
   padding: 2%;
 `

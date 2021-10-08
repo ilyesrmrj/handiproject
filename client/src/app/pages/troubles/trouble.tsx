@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { LorepIpsum } from "../../common/utils/text";
+import { DyslexieText, DyspraxieText, DysphasieText, DysgraphieText, DyscalulieText, DysorthographieText, DysText } from '../../common/utils/text';
 import { TextArea } from "../rules/components/textArea";
 import { Separator } from "../rules/components/grid";
 import {
@@ -38,7 +38,7 @@ const Row = styled.div`
 
 const mainProps = {
   title: "Les differents trouble de DYS",
-  description: LorepIpsum,
+  description: DysText,
 };
 
 const TroublesContainer = styled.div`
@@ -67,33 +67,33 @@ const MainImageContainer = styled.img`
 `;
 
 const dysplexieProps = {
-  title: "DYSPLEXIE",
-  description: LorepIpsum,
+  title: "DYSLEXIE",
+  description: DyslexieText,
 };
 
 const dyspraxieProps = {
   title: "DYSPRAXIE",
-  description: LorepIpsum,
+  description: DyspraxieText,
 };
 
 const dysphasiProps = {
-  title: "DYSPHASI",
-  description: LorepIpsum,
+  title: "DYSPHASIE",
+  description: DysphasieText,
 };
 
 const dysgraphieProps = {
   title: "DYSGRAPHIE",
-  description: LorepIpsum,
+  description: DysgraphieText,
 };
 
 const dyscalculieProps = {
   title: "DYSCALCULIE",
-  description: LorepIpsum,
+  description: DyscalulieText,
 };
 
 const dysorthograpieProps = {
   title: "DYSORTHOGRAPHIE",
-  description: LorepIpsum,
+  description: DysorthographieText,
 };
 
 export default function Trouble() {

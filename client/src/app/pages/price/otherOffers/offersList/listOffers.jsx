@@ -20,15 +20,15 @@ const ListOffers = [
     certif: 'Certificat',
   },
   {
-    title: 'Premium',
-    accessPre: 'Accès a toutes les formations',
-    checkPre: <FontIconCheck icon="fa-solid fa-check" />,
-  },
-  {
     title: 'Freemium',
     accessFree: 'Accès aux cours généraux',
     check: <FontIconCheck icon="fa-solid fa-check" />,
     cross: <FontIconCross icon="fa-solid fa-xmark" />,
+  },
+  {
+    title: 'Premium',
+    accessPre: 'Accès a toutes les formations',
+    checkPre: <FontIconCheck icon="fa-solid fa-check" />,
   },
 ]
 
@@ -40,22 +40,22 @@ const ListOffersComponent = () => (
         <CardPrice>
           <TitlePrice>{offer.title}</TitlePrice>
           <CardContain>
-            {offer.nbCours || offer.accessPre || offer.accessFree}
+            {offer.nbCours || offer.accessFree || offer.accessPre}
           </CardContain>
           <CardContain>
-            {offer.rdFin || offer.checkPre || offer.check}
+            {offer.rdFin || offer.check || offer.checkPre}
           </CardContain>
           <CardContain>
-            {offer.progess || offer.checkPre || offer.check}
+            {offer.progess || offer.check || offer.checkPre}
           </CardContain>
           <CardContain>
-            {offer.mindMap || offer.checkPre || offer.cross}
+            {offer.mindMap || offer.cross || offer.checkPre}
           </CardContain>
           <CardContain>
-            {offer.accomp || offer.checkPre || offer.cross}
+            {offer.accomp || offer.cross || offer.checkPre}
           </CardContain>
           <CardContain>
-            {offer.certif || offer.checkPre || offer.cross}
+            {offer.certif || offer.cross || offer.checkPre}
           </CardContain>
           {offer.accessPre || offer.accessFree ? (
             <ButtonPrice>Subscribe</ButtonPrice>
