@@ -1,18 +1,19 @@
-import styled from "styled-components";
-import { withRouter } from "react-router-dom";
-import { NavigationList } from "../../utils/text";
-import DropDownComponent, { DropDown, LinkStyleTo } from "./dropDown";
+import styled from 'styled-components'
+
+import { withRouter } from 'react-router-dom'
+import { NavigationList } from '../../utils/text.ts'
+import DropDownComponent, { DropDown, LinkStyleTo } from './dropDown'
 
 const ListStyle = styled.ul`
   display: flex;
   flex-direction: row;
   font-size: 20px;
-`;
+`
 const LiStyle = styled.li`
   list-style: none;
   margin-right: 80px;
   cursor: pointer;
-`;
+`
 
 const LinkStyle = styled.label`
   color: gray;
@@ -28,11 +29,11 @@ const LinkStyle = styled.label`
       opacity: 1;
     }
   }
-`;
+`
 
 const WrapperList = styled.div`
   width: 25%;
-`;
+`
 
 const ConditionalLink = ({ name, goTo, condition }) => {
   return (
@@ -41,13 +42,13 @@ const ConditionalLink = ({ name, goTo, condition }) => {
         <LinkStyleTo to={goTo}>{name}</LinkStyleTo>
       ) : (
         <>
-          <LinkStyle htmlFor="test">{name}</LinkStyle>
+          <LinkStyle>{name}</LinkStyle>
           <DropDownComponent />
         </>
       )}
     </>
-  );
-};
+  )
+}
 
 const LinkList = () => {
   return (
@@ -57,14 +58,14 @@ const LinkList = () => {
           <LiStyle key={link.name}>
             <ConditionalLink
               goTo={link.path}
-              condition={link.path !== "about"}
+              condition={link.path !== 'about'}
               name={link.name}
             ></ConditionalLink>
           </LiStyle>
         ))}
       </ListStyle>
     </WrapperList>
-  );
-};
+  )
+}
 
-export default withRouter(LinkList);
+export default withRouter(LinkList)
